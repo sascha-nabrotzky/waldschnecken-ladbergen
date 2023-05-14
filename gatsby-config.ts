@@ -1,5 +1,9 @@
 import type { GatsbyConfig } from "gatsby";
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `waldschnecken-ladbergen`,
@@ -9,13 +13,21 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: [{
-    resolve: 'gatsby-source-contentful',
-    options: {
-      "accessToken": "uEcQDOLsQDfjjWwwKCZoyLq5YYMcDL1PVpaGkGHPcvs",
-      "spaceId": "ju5lf4vaq6bl"
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", {
+  plugins: [
+    // {
+    //   resolve: 'gatsby-source-contentful',
+    //   options: {
+    //     "accessToken": `${process.env.CONTENFUL_ACCESS_TOKEN}`,
+    //     "spaceId": `${process.env.CONTENFUL_API_KEY}`,
+    //   }
+    // }, 
+  "gatsby-plugin-image", 
+  "gatsby-plugin-sharp", 
+  "gatsby-transformer-sharp", 
+  "gatsby-plugin-postcss", 
+  "gatsby-plugin-sitemap", 
+  "gatsby-plugin-mdx", 
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",

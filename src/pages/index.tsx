@@ -84,7 +84,7 @@ const badgeStyle = {
   borderRadius: 4,
   padding: "4px 6px",
   display: "inline-block",
-  position: "relative" as "relative",
+  position: "relative" as const,
   top: -2,
   marginLeft: 10,
   lineHeight: 1,
@@ -144,6 +144,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
       </h1>
+      <h2 className="text-9xl text-red-500">Tailwind is working</h2>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
         update in real-time. 😎
