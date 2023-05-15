@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import type { GatsbyConfig } from "gatsby";
 
 require("dotenv").config({
@@ -7,7 +8,7 @@ require("dotenv").config({
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `waldschnecken-ladbergen`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.waldschnecken-ladbergen.de`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -17,9 +18,10 @@ const config: GatsbyConfig = {
     // {
     //   resolve: 'gatsby-source-contentful',
     //   options: {
-    //     "accessToken": `${process.env.CONTENFUL_ACCESS_TOKEN}`,
-    //     "spaceId": `${process.env.CONTENFUL_API_KEY}`,
-    //   }
+    //     "accessToken": process.env.CONTENTFUL_ACCESS_TOKEN,
+    //     "spaceId": process.env.CONTENTFUL_API_KEY,
+    //     // contentTypeFilter: contentType => !contentType.sys.id.startsWith('page'),
+    //   },
     // }, 
   "gatsby-plugin-image", 
   "gatsby-plugin-sharp", 
