@@ -1,6 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import Logo from "../images/logo-waldschnecken.jpeg"
+import Logo from "../images/logo-waldschnecken.jpg"
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
