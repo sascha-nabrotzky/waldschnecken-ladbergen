@@ -4,7 +4,7 @@ import Logo from "../images/Logo_Waldschnecken.webp"
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
-        <main className="flex items-center justify-center flex-col p-8 w-full h-screen text-eternity-900">
+        <main className="flex items-center justify-center flex-col p-8 w-full min-h-screen text-eternity-900">
             <h2 className="font-serif text-2xl text-center">Hier entsteht die neue Internet-Präsenz der </h2>
             <h1 className="mt-4 mb-12 font-serif text-3xl lg:text-5xl text-center">Großtagespflege &bdquo;Waldschnecken&ldquo;</h1>
             <img src={Logo} alt="Logo der Großtagespflege Waldschnecken" />
