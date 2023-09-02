@@ -16,7 +16,7 @@ const MainContent: React.FC<Props> = ({
     alttext,
 }) => {
     return (
-        <div className="grid grid-rows-[min-content_1fr_min-content] h-full">
+        <div className="grid grid-rows-[min-content_min-content_1fr_min-content] h-full">
             <Header />
             <main className="p-8 w-full">
                 {pagetitle && (
