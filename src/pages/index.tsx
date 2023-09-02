@@ -4,6 +4,13 @@ import Logo from '../images/Logo_Waldschnecken.webp';
 import MainLayout from '../components/MainLayout';
 
 const IndexPage: React.FC<PageProps> = () => {
+    const [currentMail, setMail] = React.useState('');
+    const mailto = 'mailto:kontakt@waldschnecken-ladbergen.de';
+
+    function addMail() {
+        setMail(mailto);
+    }
+
     return (
         <>
             <MainLayout>
@@ -21,9 +28,28 @@ const IndexPage: React.FC<PageProps> = () => {
                     Liebevolle und naturbezogene Betreuung Ihrer Kinder in
                     Ladbergen durch Tatjana Nabrotzky und Oksana Welk
                 </p>
-                <address className="mt-12 text-xl">
+                <address className="text-center mt-12 text-xl">
                     Auf Stieneckers 52, <br />
-                    49549 Ladbergen
+                    49549 Ladbergen <br />
+                    <a
+                        href={`${currentMail}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={addMail}
+                        className="font-bold text-xl"
+                    >
+                        E-Mail schreiben
+                    </a>
+                    <br />
+                    <br />
+                    <a href={`tel: +49 170 2802494`}>
+                        Tatjana Nabrotzky: 0170 2802494
+                    </a>
+                    <br />
+                    <br />
+                    <a href={`tel: +49 162 1366853`}>
+                        Oksana Welk: 0162 1366853
+                    </a>
                 </address>
             </MainLayout>
         </>
@@ -37,5 +63,10 @@ export const Head: HeadFC = () => (
     <>
         <html lang="de" />
         <title>Waldschnecken | Großtagespflege in Ladbergen</title>
+        <meta
+            name="description"
+            content="Liebevolle und naturbezogene Betreuung Ihrer Kinder in
+                    Ladbergen durch Tatjana Nabrotzky und Oksana Welk"
+        />
     </>
 );
