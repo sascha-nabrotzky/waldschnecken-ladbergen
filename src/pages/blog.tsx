@@ -5,10 +5,7 @@ import MainLayout from '../components/MainLayout';
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <>
-            <MainLayout>
-                <h1 className="mt-4 mb-12 font-serif text-3xl lg:text-5xl text-center">
-                    Blog
-                </h1>
+            <MainLayout pagetitle="Blog">
                 <p className="mt-12 text-xl text-center max-w-xl">
                     Hier steht demnächst, was bei uns alles passiert
                 </p>
