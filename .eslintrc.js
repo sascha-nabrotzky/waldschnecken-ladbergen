@@ -8,18 +8,18 @@ module.exports = {
         __PATH_PREFIX__: true,
     },
     extends: [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "react-app"
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:@typescript-eslint/recommended',
+        'react-app',
     ],
     overrides: [],
-    parser: "@typescript-eslint/parser",
+    parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
+        ecmaVersion: 'latest',
+        sourceType: 'module',
     },
-    plugins: ["react", "@typescript-eslint"],
+    plugins: ['react', '@typescript-eslint'],
     rules: {
         indent: ['error', 4],
         'react/jsx-indent': ['error', 4],
