@@ -15,9 +15,9 @@ const MainContent: React.FC<Props> = ({
     alttext,
 }) => {
     return (
-        <>
+        <div className="grid grid-rows-[min-content_1fr_min-content] h-full">
             <Header />
-            <main className="flex items-center justify-center flex-col p-8 w-full">
+            <main className="p-8 w-full">
                 {pagetitle && (
                     <h1 className="mt-4 mb-12 font-serif text-3xl lg:text-5xl text-center">
                         {pagetitle}
@@ -32,7 +32,7 @@ const MainContent: React.FC<Props> = ({
                 {children}
             </main>
             <Footer />
-        </>
+        </div>
     );
 };
 

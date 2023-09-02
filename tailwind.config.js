@@ -8,7 +8,6 @@ module.exports = {
         extend: {
             fontFamily: {
                 serif: ['Yeseva One', 'serif'],
-                sans: ['Source Sans Pro', 'sans-serif'],
             },
             colors: {
                 whiskey: {

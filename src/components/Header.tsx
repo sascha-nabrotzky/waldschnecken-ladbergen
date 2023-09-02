@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Header: React.FC = () => {
     return (
-        <header className="flex items-center justify-center bg-roman-coffee-600 text-white">
+        <header className="flex items-center justify-center p-2 bg-roman-coffee-600 text-white">
             <nav className="flex gap-4 text-xl">
                 <Link to="/">Home</Link>
                 <Link to="/blog">Blog</Link>
