@@ -1,14 +1,12 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import Logo from '../images/Logo_Waldschnecken.webp';
-import Header from '../components/Header';
-import MainContent from '../components/MainContent';
+import MainLayout from '../components/MainLayout';
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <>
-            <Header />
-            <MainContent>
+            <MainLayout>
                 <h2 className="font-serif text-2xl text-center">
                     Hier entsteht die neue Internet-Präsenz der
                 </h2>
@@ -27,7 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     Auf Stieneckers 52, <br />
                     49549 Ladbergen
                 </address>
-            </MainContent>
+            </MainLayout>
         </>
     );
 };
