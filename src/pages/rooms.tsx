@@ -8,7 +8,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <MainLayout pagetitle="Räume">
                 <p className="mt-12 text-xl text-center max-w-xl">
                     Hier seht ihr demnächst Fotos der ganzen Räume und der
-                    Außenanlge
+                    Außenanlage
                 </p>
             </MainLayout>
         </>
@@ -18,4 +18,9 @@ const IndexPage: React.FC<PageProps> = () => {
 export default IndexPage;
 
 // built-in Head export that allows you to add elements to the document head of your pages
-export const Head: HeadFC = () => <title>Waldschnecken | Räume</title>;
+export const Head: HeadFC = () => (
+    <>
+        <html lang="de" />
+        <title>Waldschnecken | Räume</title>
+    </>
+);

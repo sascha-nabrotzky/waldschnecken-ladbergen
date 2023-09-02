@@ -1,4 +1,5 @@
 import * as React from 'react';
+import type { HeadFC } from 'gatsby';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -19,7 +20,7 @@ const MainContent: React.FC<Props> = ({
             <Header />
             <main className="p-8 w-full">
                 {pagetitle && (
-                    <h1 className="mt-4 mb-12 font-serif text-3xl lg:text-5xl text-center">
+                    <h1 className="mt-4 mb-12 font-serif text-3xl lg:text-5xl text-center break-word hyphens-auto">
                         {pagetitle}
                     </h1>
                 )}

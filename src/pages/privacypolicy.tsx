@@ -5,7 +5,7 @@ import MainLayout from '../components/MainLayout';
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <>
-            <MainLayout pagetitle="Datenschutzerklärung">
+            <MainLayout pagetitle="Datenschutz&shy;erklärung">
                 <p>Stand: 2. September 2023</p>
                 <h2>Inhaltsübersicht</h2>
                 <ul className="index">
@@ -738,5 +738,8 @@ export default IndexPage;
 
 // built-in Head export that allows you to add elements to the document head of your pages
 export const Head: HeadFC = () => (
-    <title>Waldschnecken | Datenschutzerklärung</title>
+    <>
+        <html lang="de" />
+        <title>Waldschnecken | Datenschutzerklärung</title>
+    </>
 );

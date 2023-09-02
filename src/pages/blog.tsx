@@ -17,4 +17,9 @@ const IndexPage: React.FC<PageProps> = () => {
 export default IndexPage;
 
 // built-in Head export that allows you to add elements to the document head of your pages
-export const Head: HeadFC = () => <title>Waldschnecken | Blog</title>;
+export const Head: HeadFC = () => (
+    <>
+        <html lang="de" />
+        <title>Waldschnecken | Blog</title>;
+    </>
+);

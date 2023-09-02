@@ -34,5 +34,8 @@ export default IndexPage;
 
 // built-in Head export that allows you to add elements to the document head of your pages
 export const Head: HeadFC = () => (
-    <title>Waldschnecken | Großtagespflege in Ladbergen</title>
+    <>
+        <html lang="de" />
+        <title>Waldschnecken | Großtagespflege in Ladbergen</title>
+    </>
 );
