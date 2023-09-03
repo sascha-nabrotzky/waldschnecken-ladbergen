@@ -1,5 +1,4 @@
 import * as React from 'react';
-import type { HeadFC } from 'gatsby';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -16,7 +15,7 @@ const MainContent: React.FC<Props> = ({
     alttext,
 }) => {
     return (
-        <div className="grid grid-rows-[min-content_min-content_1fr_min-content] h-full">
+        <div className="grid grid-rows-[repeat(3,_min-content)_1fr_min-content] h-full">
             <Header />
             <main className="p-8 w-full">
                 {pagetitle && (
