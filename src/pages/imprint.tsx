@@ -6,7 +6,7 @@ const IndexPage: React.FC<PageProps> = () => {
     return (
         <>
             <MainLayout pagetitle="Impressum">
-                <h3 className="mb-2 text-2xl font-medium">
+                <h3 className="mb-2 text-2xl font-bold">
                     Angaben gemäß § 5 TMG
                 </h3>
                 <p>
@@ -38,12 +38,8 @@ const IndexPage: React.FC<PageProps> = () => {
                     <br />
                     <br />
                 </p>
-                <h3 className="mb-2 text-2xl font-medium">
-                    Haftungsausschluss:
-                </h3>
-                <h4 className="mb-2 text-xl font-medium">
-                    Haftung für Inhalte
-                </h4>
+                <h3 className="mb-2 text-2xl font-bold">Haftungsausschluss:</h3>
+                <h4 className="mb-2 text-xl font-bold">Haftung für Inhalte</h4>
                 <p>
                     Die Inhalte unserer Seiten wurden mit größter Sorgfalt
                     erstellt. Für die Richtigkeit, Vollständigkeit und
@@ -64,7 +60,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     <br />
                     <br />
                 </p>
-                <h4 className="mb-2 text-xl font-medium">Haftung für Links</h4>
+                <h4 className="mb-2 text-xl font-bold">Haftung für Links</h4>
                 <p>
                     Unser Angebot enthält Links zu externen Webseiten Dritter,
                     auf deren Inhalte wir keinen Einfluss haben. Deshalb können
@@ -81,7 +77,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     <br />
                     <br />
                 </p>
-                <h4 className="mb-2 text-xl font-medium">Urheberrecht</h4>
+                <h4 className="mb-2 text-xl font-bold">Urheberrecht</h4>
                 <p>
                     Die durch die Seitenbetreiber erstellten Inhalte und Werke
                     auf diesen Seiten unterliegen dem deutschen Urheberrecht.
@@ -101,7 +97,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     <br />
                     <br />
                 </p>
-                <h4 className="mb-2 text-xl font-medium">Datenschutz</h4>
+                <h4 className="mb-2 text-xl font-bold">Datenschutz</h4>
                 <p>
                     Die Nutzung unserer Webseite ist in der Regel ohne Angabe
                     personenbezogener Daten möglich. Soweit auf unseren Seiten

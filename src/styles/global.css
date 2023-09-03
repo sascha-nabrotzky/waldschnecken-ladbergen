@@ -34,13 +34,3 @@
         /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
             url('../fonts/barlow-v12-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-
-html {
-    height: 100dvh;
-}
-
-body,
-#___gatsby,
-#gatsby-focus-wrapper {
-    height: 100%;
-}
