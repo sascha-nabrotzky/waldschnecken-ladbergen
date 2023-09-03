@@ -6,21 +6,23 @@ const IndexPage: React.FC<PageProps> = () => {
     return (
         <>
             <MainLayout pagetitle="Pädagogische Schwerpunkte">
-                <h2 className="text-2xl font-bold my-4">
+                <h3 className="mt-8 mb-2 text-xl font-bold">
                     Unser grundlegendes Ziel
-                </h2>
+                </h3>
                 <p>
                     unserer pädagogischen Arbeit liegt darin, die Kinder in
                     ihrem Alltag zu begleiten, ihnen einen ganz natürlichen
                     Tagesablauf zu ermöglichen und ihnen eine liebevolle
-                    Atmosphäre zum Spielen und Entfalten zu bieten. Bewegung
+                    Atmosphäre zum Spielen und Entfalten zu bieten.
                 </p>
+                <h3 className="mt-8 mb-2 text-xl font-bold">Bewegung</h3>
                 <p>
                     Einen großen Stellenwert hat bei uns die Bewegung an der
                     frischen Luft, draußen im Garten, auf Spielplätzen, im Wald
                     oder längere Spaziergänge in der Natur gehören zu unserem
-                    Alltag. Wald und Natur
+                    Alltag.
                 </p>
+                <h3 className="mt-8 mb-2 text-xl font-bold">Wald und Natur</h3>
                 <p>
                     Mehrmals im Jahr finden bei uns auch Waldtage statt, dann
                     verbringen wir meistens den ganzen Vormittag bis zum
@@ -31,8 +33,9 @@ const IndexPage: React.FC<PageProps> = () => {
                     oder Ästen ausweichen müssen. Im Sommer 2022 haben wir
                     zusätzlich für unseren Schwerpunkt Waldpädagogik, ein
                     kleines Waldstück gepachtet. Das wird nach und nach zu einem
-                    Waldspielplatz gestaltet. Sprachförderung
+                    Waldspielplatz gestaltet.
                 </p>
+                <h3 className="mt-8 mb-2 text-xl font-bold">Sprachförderung</h3>
                 <p>
                     Die Förderung der Sprachentwicklung wird bei uns in den
                     täglichen Ablauf mit eingebunden. Das tägliche miteinander
@@ -45,7 +48,9 @@ const IndexPage: React.FC<PageProps> = () => {
                     stets gefördert.
                 </p>
 
-                <h2 className="text-2xl font-bold my-4">Gesunde Ernährung</h2>
+                <h3 className="mt-8 mb-2 text-xl font-bold">
+                    Gesunde Ernährung
+                </h3>
                 <p>
                     Wir möchten den Kindern eine gesunde und ausgewogene
                     Ernährung mit auf den Weg geben. Es wird jeden Tag frisch,

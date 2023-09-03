@@ -33,7 +33,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     Wickelbereich. Die Garderobe befindet sich im Eingangsflur.
                 </p>
 
-                <h3>Außenanlage</h3>
+                <h3 className="mt-8 mb-2 text-xl font-bold">Außenanlage</h3>
 
                 <p>
                     Das Außengelände bietet viele unterschiedliche
