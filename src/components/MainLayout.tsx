@@ -15,7 +15,7 @@ const MainContent: React.FC<Props> = ({
     alttext,
 }) => {
     return (
-        <div className="grid grid-rows-[repeat(3,_min-content)_1fr_min-content] h-full">
+        <div className="grid grid-rows-[repeat(3,_min-content)_1fr_min-content] h-full text-mine-shaft-950">
             <Header />
             <main className="p-8 w-full">
                 {pagetitle && (

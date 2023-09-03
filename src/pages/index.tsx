@@ -13,41 +13,58 @@ const IndexPage: React.FC<PageProps> = () => {
 
     return (
         <MainLayout>
-            <h2 className="font-serif text-2xl text-center">
-                Hier entsteht die neue Internet-Präsenz der
-            </h2>
-            <h1 className="mt-4 mb-12 font-serif text-3xl lg:text-5xl text-center">
-                Großtagespflege &bdquo;Waldschnecken&ldquo;
-            </h1>
+            <p className="mb-12 text-center text-mine-shaft-500">
+                ## Website im Aufbau ##
+            </p>
+
             <img
                 src={Logo}
-                alt="Logo der Großtagespflege Waldschnecken"
+                alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
                 className="mx-auto"
             />
+            <h1 className="mt-4 mb-12 text-xl text-center text-roman-coffee-600">
+                Großtagespflege &bdquo;Waldschnecken&ldquo;
+            </h1>
+            <h2 className="text-3xl font-serif text-center">
+                Kindertagespflege mit dem Herzen in der Natur
+            </h2>
             <p className="mx-auto mt-12 text-xl text-center max-w-xl">
                 Liebevolle und naturbezogene Betreuung Ihrer Kinder in Ladbergen
                 durch Tatjana Nabrotzky und Oksana Welk
             </p>
-            <address className="text-center mt-12 text-xl">
-                Auf Stieneckers 52, <br />
-                49549 Ladbergen <br />
+            <address className="text-center mt-12 text-xl not-italic">
+                <p className="mb-4">
+                    Auf Stieneckers 52,
+                    <br />
+                    49549 Ladbergen
+                    <br />
+                </p>
+
+                <a
+                    href={`tel: +49 170 2802494`}
+                    className="block mb-4"
+                >
+                    Tatjana Nabrotzky:
+                    <br />
+                    <strong>0170 2802494</strong>
+                </a>
+                <a
+                    href={`tel: +49 162 1366853`}
+                    className="block mb-8"
+                >
+                    Oksana Welk:
+                    <br />
+                    <strong>0162 1366853</strong>
+                </a>
                 <a
                     href={`${currentMail}`}
                     target="_blank"
                     rel="noreferrer"
                     onClick={addMail}
-                    className="font-bold text-xl"
+                    className="block font-bold text-xl mb-4"
                 >
                     E-Mail schreiben
                 </a>
-                <br />
-                <br />
-                <a href={`tel: +49 170 2802494`}>
-                    Tatjana Nabrotzky: 0170 2802494
-                </a>
-                <br />
-                <br />
-                <a href={`tel: +49 162 1366853`}>Oksana Welk: 0162 1366853</a>
             </address>
         </MainLayout>
     );
