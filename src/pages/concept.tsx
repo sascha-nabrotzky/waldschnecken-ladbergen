@@ -45,7 +45,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     stets gefördert.
                 </p>
 
-                <h2 className="text-2xl font-bold my-4">Verpflegung</h2>
+                <h2 className="text-2xl font-bold my-4">Gesunde Ernährung</h2>
                 <p>
                     Wir möchten den Kindern eine gesunde und ausgewogene
                     Ernährung mit auf den Weg geben. Es wird jeden Tag frisch,
