@@ -1,3 +1,8 @@
 node_modules/
 build/
 styles/
+public/
+tsconfig.json
+tailwind.config.js
+.eslintrc.js
+postcss.config.js

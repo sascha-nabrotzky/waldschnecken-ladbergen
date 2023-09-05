@@ -1,27 +1,27 @@
 module.exports = {
-    env: {
-        browser: true,
-        es2021: true,
-        node: true,
+  root: true,
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  settings: {
+    react: {
+      version: 'detect',
     },
-    globals: {
-        __PATH_PREFIX__: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'standard-with-typescript',
+  ],
+  overrides: [],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
     },
-    extends: [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'plugin:@typescript-eslint/recommended',
-        'react-app',
-    ],
-    overrides: [],
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
-    },
-    plugins: ['react', '@typescript-eslint'],
-    rules: {
-        indent: ['error', 4],
-        'react/jsx-indent': ['error', 4],
-    },
-};
+  },
+  plugins: ['react'],
+  rules: {},
+}
