@@ -1,5 +1,5 @@
 import * as React from 'react'
-import FotoTatjana from '../images/Tatjana.webp'
+import { StaticImage } from 'gatsby-plugin-image'
 import FotoOksana from '../images/Oksana.webp'
 
 const Address: React.FC = () => {
@@ -49,9 +49,10 @@ const Address: React.FC = () => {
 
         <div className="flex flex-col justify-center items-center mb-12">
           <div className="mb-4 bg-mine-shaft-200 w-28 aspect-square rounded-full overflow-hidden">
-            <img
-              src={FotoTatjana}
+            <StaticImage
+              src="../images/Tatjana.webp"
               alt="Foto von Tagesmutter Tatjana Nabrotzky"
+              placeholder="blurred"
             />
           </div>
           <a
@@ -93,9 +94,10 @@ const Address: React.FC = () => {
 
         <div className="flex flex-col justify-center items-center mb-12">
           <div className="mb-4 bg-mine-shaft-200 w-28 aspect-square rounded-full overflow-hidden">
-            <img
-              src={FotoOksana}
+            <StaticImage
+              src="../images/Oksana.webp"
               alt="Foto von Tagesmutter Oksana Welk"
+              placeholder="blurred"
             />
           </div>
           <a
