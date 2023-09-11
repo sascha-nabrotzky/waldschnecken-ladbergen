@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import FotoOksana from '../images/Oksana.webp'
+import { ReactComponent as CloseIcon } from '../icons/close.svg'
 
 const Address: React.FC = () => {
   const [currentMail, setMail] = React.useState('')
@@ -13,23 +13,23 @@ const Address: React.FC = () => {
   }
 
   const openModal1 = (): void => {
-    if (modalRef1.current) {
+    if (modalRef1.current != null) {
       modalRef1.current.showModal()
     }
   }
   const closeModal1 = (): void => {
-    if (modalRef1.current) {
+    if (modalRef1.current != null) {
       modalRef1.current.close()
     }
   }
 
   const openModal2 = (): void => {
-    if (modalRef2.current) {
+    if (modalRef2.current != null) {
       modalRef2.current.showModal()
     }
   }
   const closeModal2 = (): void => {
-    if (modalRef2.current) {
+    if (modalRef2.current != null) {
       modalRef2.current.close()
     }
   }
@@ -79,15 +79,18 @@ const Address: React.FC = () => {
             className="pt-4 pb-8 px-8 text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
           >
             <div className="flex justify-end">
-              <button onClick={closeModal1}>X</button>
+              <button onClick={closeModal1}>
+                <CloseIcon className="h-6" />
+              </button>
             </div>
             <div>
-              Hallo, ich heiße Tatjana Nabrotzky, ich bin 1981 geboren, bin
-              verheiratet und habe zwei eigene Kinder die 2004 und 2008 geboren
-              sind. Ich bin seit 2002 staatlich anerkannte Erzieherin und habe
-              bis 2015 in verschiedenen Kindergärten gearbeitet. Seit Oktober
-              2015 bin ich als selbstständige Tagesmutter tätig und seit
-              01.08.2023 in der Großtagespflege Waldschnecken.
+              Hallo, ich heiße <strong>Tatjana Nabrotzky,</strong> ich bin 1981
+              geboren, bin verheiratet und habe zwei eigene Kinder die 2004 und
+              2008 geboren sind. Ich bin seit 2002 staatlich anerkannte
+              Erzieherin und habe bis 2015 in verschiedenen Kindergärten
+              gearbeitet. Seit Oktober 2015 bin ich als selbstständige
+              Tagesmutter tätig und seit 01.08.2023 in der Großtagespflege
+              Waldschnecken.
             </div>
           </dialog>
         </div>
@@ -124,18 +127,20 @@ const Address: React.FC = () => {
             className="pt-4 pb-8 px-8 text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
           >
             <div className="flex justify-end">
-              <button onClick={closeModal2}>X</button>
+              <button onClick={closeModal2}>
+                <CloseIcon className="h-6" />
+              </button>
             </div>
             <div>
-              Hallo, ich bin Oksana Welk, ich bin 1979 geboren, bin verheiratet
-              und habe zwei eigene Kinder die 2004 und 2006 geboren sind. Ich
-              habe den Beruf Einzelhandelskauffrau gelernt, und war mehrere
-              Jahre in dem Beruf in vielen verschiedenen Bereichen tätig, bis
-              ich mich entschieden habe mich beruflich umzuorientieren. Die
-              Qualifizierung zur Tagesmutter habe ich im Dezember 2018
-              abgeschlossen. Seit April 2018 bin ich als selbstständige
-              Tagesmutter tätig und seit dem 01.08.2023 in der Großtagespflege
-              Waldschnecken.
+              Hallo, ich bin <strong>Oksana Welk,</strong> ich bin 1979 geboren,
+              bin verheiratet und habe zwei eigene Kinder die 2004 und 2006
+              geboren sind. Ich habe den Beruf Einzelhandelskauffrau gelernt,
+              und war mehrere Jahre in dem Beruf in vielen verschiedenen
+              Bereichen tätig, bis ich mich entschieden habe mich beruflich
+              umzuorientieren. Die Qualifizierung zur Tagesmutter habe ich im
+              Dezember 2018 abgeschlossen. Seit April 2018 bin ich als
+              selbstständige Tagesmutter tätig und seit dem 01.08.2023 in der
+              Großtagespflege Waldschnecken.
             </div>
           </dialog>
         </div>
