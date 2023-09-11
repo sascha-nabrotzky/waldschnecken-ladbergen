@@ -70,6 +70,10 @@ export default IndexPage
 export const Head: HeadFC = () => (
   <>
     <html lang="de" />
-    <title>Waldschnecken | Konzept</title>;
+    <title>Konzept | Waldschnecken</title>
+    <meta
+      name="description"
+      content="Grundlegendes Ziel: Bewegung, Wald und Natur, Sprachförderung, gesunde Ernährung"
+    />
   </>
 )

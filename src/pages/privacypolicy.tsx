@@ -679,6 +679,14 @@ export default IndexPage
 export const Head: HeadFC = () => (
   <>
     <html lang="de" />
-    <title>Waldschnecken | Datenschutzerklärung</title>
+    <title>Datenschutzerklärung | Waldschnecken</title>
+    <meta
+      name="description"
+      content="Die Datenschutzerklärung der Waldschnecken"
+    />
+    <meta
+      name="robots"
+      content="noindex"
+    />
   </>
 )

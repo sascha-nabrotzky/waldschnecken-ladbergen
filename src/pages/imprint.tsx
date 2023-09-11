@@ -132,5 +132,13 @@ export const Head: HeadFC = () => (
   <>
     <html lang="de" />
     <title>Waldschnecken | Impressum</title>
+    <meta
+      name="description"
+      content="Das Imperssum der Waldschnecken"
+    />
+    <meta
+      name="robots"
+      content="noindex"
+    />
   </>
 )

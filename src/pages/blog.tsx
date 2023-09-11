@@ -20,6 +20,10 @@ export default IndexPage
 export const Head: HeadFC = () => (
   <>
     <html lang="de" />
-    <title>Waldschnecken | Blog</title>;
+    <title>Blog | Waldschnecken</title>
+    <meta
+      name="description"
+      content="Bekommt einen kleinen Einblick in unseren täglichen Erlebnissen"
+    />
   </>
 )
