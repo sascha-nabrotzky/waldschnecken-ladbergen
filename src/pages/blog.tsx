@@ -1,14 +1,45 @@
 import * as React from 'react'
-import type { HeadFC, PageProps } from 'gatsby'
+import { useStaticQuery, type HeadFC, type PageProps, graphql } from 'gatsby'
 import MainLayout from '../components/MainLayout'
 
 const IndexPage: React.FC<PageProps> = () => {
+  // const data = useStaticQuery(graphql`
+  //   query blogpost {
+  //     contentfulBlogpost {
+  //       title
+  //     }
+  //     contentfulBlogpostNormalTextTextNode {
+  //       normalText
+  //     }
+  //   }
+  // `)
+
+  const allData = useStaticQuery(graphql`
+    query AllBlogposts {
+      allContentfulBlogpost {
+        nodes {
+          title
+        }
+      }
+      allContentfulBlogpostNormalTextTextNode {
+        nodes {
+          normalText
+        }
+      }
+    }
+  `)
+
+  console.log(allData.allContentfulBlogpost.nodes[0].title)
+
   return (
     <>
       <MainLayout pagetitle="Blog">
-        <p className="mt-12 text-xl text-center max-w-xl">
-          Hier steht demnächst, was bei uns alles passiert
-        </p>
+        {/* <h2 className="mt-12 mb-6 text-xl font-bold">
+          {data.contentfulBlogpost.title}
+        </h2>
+        <p>{data.contentfulBlogpostNormalTextTextNode.normalText}</p> */}
+
+        {}
       </MainLayout>
     </>
   )
