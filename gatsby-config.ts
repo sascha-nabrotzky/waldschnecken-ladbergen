@@ -1,8 +1,9 @@
 import type { GatsbyConfig } from 'gatsby'
+import * as dotenv from 'dotenv'
 
-// require("dotenv").config({
-//     path: `.env.${process.env.NODE_ENV}`,
-// });
+dotenv.config({
+  path: `.env.${process.env.NODE_ENV}`
+})
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -14,15 +15,16 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    // {
-    // resolve: 'gatsby-source-contentful',
-    // options: {
-    // Artikel muss auf Contentful angelegt sein
-    // "accessToken": process.env.CONTENTFUL_ACCESS_TOKEN,
-    // "spaceId": process.env.CONTENTFUL_API_KEY,
-    // contentTypeFilter: contentType => !contentType.sys.id.startsWith('page'),
-    // },
-    // },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        // Artikel muss auf Contentful angelegt sein
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CONTENTFUL_API_KEY,
+        contentTypeFilter: (contentType: { sys: { id: string } }) =>
+          !contentType.sys.id.startsWith('page')
+      }
+    },
     'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-sharp',
