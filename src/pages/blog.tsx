@@ -1,45 +1,72 @@
+/* eslint-disable @typescript-eslint/indent */
 import * as React from 'react'
 import { useStaticQuery, type HeadFC, type PageProps, graphql } from 'gatsby'
 import MainLayout from '../components/MainLayout'
 
 const IndexPage: React.FC<PageProps> = () => {
-  // const data = useStaticQuery(graphql`
-  //   query blogpost {
-  //     contentfulBlogpost {
-  //       title
-  //     }
-  //     contentfulBlogpostNormalTextTextNode {
-  //       normalText
-  //     }
-  //   }
-  // `)
-
   const allData = useStaticQuery(graphql`
     query AllBlogposts {
       allContentfulBlogpost {
         nodes {
           title
-        }
-      }
-      allContentfulBlogpostNormalTextTextNode {
-        nodes {
-          normalText
+          normalText {
+            normalText
+          }
+          image {
+            title
+            url
+            publicUrl
+          }
         }
       }
     }
   `)
 
-  console.log(allData.allContentfulBlogpost.nodes[0].title)
-
   return (
     <>
       <MainLayout pagetitle="Blog">
-        {/* <h2 className="mt-12 mb-6 text-xl font-bold">
-          {data.contentfulBlogpost.title}
-        </h2>
-        <p>{data.contentfulBlogpostNormalTextTextNode.normalText}</p> */}
-
-        {}
+        {allData.allContentfulBlogpost.nodes.map(
+          (post: {
+            [image: string]: any
+            title:
+              | string
+              | number
+              | boolean
+              | React.ReactElement<
+                  any,
+                  string | React.JSXElementConstructor<any>
+                >
+              | Iterable<React.ReactNode>
+              | React.ReactPortal
+              | null
+              | undefined
+            normalText: {
+              normalText:
+                | string
+                | number
+                | boolean
+                | React.ReactElement<
+                    any,
+                    string | React.JSXElementConstructor<any>
+                  >
+                | Iterable<React.ReactNode>
+                | React.ReactPortal
+                | null
+                | undefined
+            }
+          }) => {
+            return (
+              <>
+                <h2 className="mt-12 mb-6 text-xl font-bold">{post.title}</h2>
+                <p>{post.normalText.normalText}</p>
+                <img
+                  src={post.image.publicUrl}
+                  alt={post.image.title}
+                />
+              </>
+            )
+          }
+        )}
       </MainLayout>
     </>
   )
