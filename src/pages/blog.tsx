@@ -8,6 +8,7 @@ const IndexPage: React.FC<PageProps> = () => {
     query AllBlogposts {
       allContentfulBlogpost {
         nodes {
+          id
           title
           normalText {
             normalText
@@ -54,16 +55,20 @@ const IndexPage: React.FC<PageProps> = () => {
                 | null
                 | undefined
             }
+            id: string
           }) => {
             return (
-              <>
+              <div
+                className="col-start-2 col-end-4"
+                key={post.id}
+              >
                 <h2 className="mt-12 mb-6 text-xl font-bold">{post.title}</h2>
                 <p>{post.normalText.normalText}</p>
                 <img
                   src={post.image.url}
                   alt={post.image.title}
                 />
-              </>
+              </div>
             )
           }
         )}

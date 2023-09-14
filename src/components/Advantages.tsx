@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const Advantages: React.FC = () => {
   return (
-    <section className="flex flex-col gap-6 mb-20 text-center bg-whiskey-200 px-6 py-8 rounded-3xl">
+    <section className="col-start-2 col-end-4 flex flex-col gap-6 text-center bg-whiskey-200 px-6 py-8 rounded-3xl">
       <div>
         <h3>Individuelle Betreuung:</h3>
         <p className="text-xl mt-2">

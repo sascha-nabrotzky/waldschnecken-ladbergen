@@ -2,29 +2,26 @@ import * as React from 'react'
 import type { HeadFC, PageProps } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import MainLayout from '../components/MainLayout'
-import Address from '../components/Address'
+import Contact from '../components/Conact'
 import Advantages from '../components/Advantages'
 import Testimonials from '../components/Testimonials'
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
-      <MainLayout>
-        <h2 className="mb-6 text-3xl font-serif text-center">
-          Kindertagespflege mit dem Herzen in der Natur
-        </h2>
-        <p className="mb-16 mx-auto text-xl text-center max-w-xl">
-          Liebevolle, naturbezogene und professionelle Betreuung Deines Kindes.
-        </p>
+      <MainLayout
+        pagetitle="Kindertagespflege mit dem Herzen in der Natur"
+        subtitle="Liebevolle, naturbezogene und professionelle Betreuung Deines Kindes."
+      >
         <StaticImage
           src="../images/Logo_Waldschnecken.webp"
           alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
-          className="mx-auto mb-20"
+          className="col-start-2 col-end-4 mx-auto"
           placeholder="blurred"
         />
         <Testimonials />
         <Advantages />
-        <Address />
+        <Contact />
       </MainLayout>
     </>
   )
