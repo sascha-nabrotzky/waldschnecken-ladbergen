@@ -60,7 +60,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <h2 className="mt-12 mb-6 text-xl font-bold">{post.title}</h2>
                 <p>{post.normalText.normalText}</p>
                 <img
-                  src={post.image.publicUrl}
+                  src={post.image.url}
                   alt={post.image.title}
                 />
               </>
