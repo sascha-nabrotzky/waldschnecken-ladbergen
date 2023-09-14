@@ -39,13 +39,13 @@ const Address: React.FC = () => {
       <h1 className="mb-2 font-bold text-2xl text-center">
         Großtagespflege &bdquo;Waldschnecken&ldquo;
       </h1>
-      <address className="text-center mb-12 text-xl not-italic">
-        <p className="mb-10">
+      <section className="text-center mb-12 text-xl not-italic">
+        <address className="mb-10">
           Auf Stieneckers 52,
           <br />
           49549 Ladbergen
           <br />
-        </p>
+        </address>
 
         <div className="flex flex-col justify-center items-center mb-12">
           <div className="mb-4 bg-mine-shaft-200 w-28 aspect-square rounded-full overflow-hidden">
@@ -74,6 +74,7 @@ const Address: React.FC = () => {
           >
             Info
           </button>
+
           <dialog
             ref={modalRef1}
             className="pt-4 pb-8 px-8 text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
@@ -122,6 +123,7 @@ const Address: React.FC = () => {
           >
             Info
           </button>
+
           <dialog
             ref={modalRef2}
             className="pt-4 pb-8 px-8 text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
@@ -154,7 +156,7 @@ const Address: React.FC = () => {
         >
           E-Mail schreiben
         </a>
-      </address>
+      </section>
     </>
   )
 }
