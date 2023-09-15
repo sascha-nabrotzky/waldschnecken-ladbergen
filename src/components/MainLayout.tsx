@@ -22,11 +22,11 @@ const MainContent: React.FC<Props> = ({
       <main className="grid grid-cols-default md:gap-x-16 gap-y-16 md:gap-y-20 my-6">
         {pagetitle != null && (
           <div className="col-start-2 col-end-4">
-            <h1 className="font-serif text-3xl lg:text-5xl text-center break-word hyphens-auto">
+            <h1 className="font-serif text-3xl lg:text-5xl text-center break-word">
               {pagetitle}
             </h1>
             {subtitle != null && (
-              <h2 className="mt-6 text-2xl lg:text-4xl text-center break-word hyphens-auto">
+              <h2 className="mt-6 text-xl lg:text-4xl text-center break-word">
                 {subtitle}
               </h2>
             )}

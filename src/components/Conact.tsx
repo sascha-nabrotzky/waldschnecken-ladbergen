@@ -36,11 +36,11 @@ const Address: React.FC = () => {
 
   return (
     <>
-      <address className="col-start-2 col-end-4 not-italic">
-        <h3 className="mb-2 font-bold text-2xl text-center">
+      <address className="col-start-2 col-end-4 text-xl not-italic">
+        <h3 className="mb-2 font-bold text-center">
           Großtagespflege &bdquo;Waldschnecken&ldquo;
         </h3>
-        <p className="text-center text-xl ">
+        <p className="text-center">
           Auf Stieneckers 52,
           <br />
           49549 Ladbergen
@@ -69,21 +69,24 @@ const Address: React.FC = () => {
         </a>
         <button
           onClick={openModal1}
-          className="mt-4 pt-1.5 pb-2 px-4 text-lg text-white rounded-full bg-mine-shaft-400 leading-none"
+          className="mt-4 pt-1.5 pb-2 px-4 text-xl text-white rounded-full bg-mine-shaft-400 leading-none"
         >
           Info
         </button>
 
         <dialog
           ref={modalRef1}
-          className="pt-4 pb-8 px-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
+          className="mx-4 pt-4 pb-8 px-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
         >
           <div className="flex justify-end">
-            <button onClick={closeModal1}>
+            <button
+              onClick={closeModal1}
+              className="p-2 mb-2"
+            >
               <CloseIcon className="h-6" />
             </button>
           </div>
-          <div>
+          <div className="text-xl">
             Hallo, ich heiße <strong>Tatjana Nabrotzky,</strong> ich bin 1981
             geboren, bin verheiratet und habe zwei eigene Kinder die 2004 und
             2008 geboren sind. Ich bin seit 2002 staatlich anerkannte Erzieherin
@@ -124,14 +127,17 @@ const Address: React.FC = () => {
 
         <dialog
           ref={modalRef2}
-          className="pt-4 pb-8 px-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
+          className="mx-4 pt-4 pb-8 px-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
         >
           <div className="flex justify-end">
-            <button onClick={closeModal2}>
+            <button
+              onClick={closeModal2}
+              className="p-2 mb-2"
+            >
               <CloseIcon className="h-6" />
             </button>
           </div>
-          <div>
+          <div className="text-xl">
             Hallo, ich bin <strong>Oksana Welk,</strong> ich bin 1979 geboren,
             bin verheiratet und habe zwei eigene Kinder die 2004 und 2006
             geboren sind. Ich habe den Beruf Einzelhandelskauffrau gelernt, und

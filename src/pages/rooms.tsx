@@ -7,7 +7,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <MainLayout pagetitle="Räume">
-        <section className="col-start-2 col-end-4">
+        <section className="col-start-2 col-end-4 text-xl">
           <p className="hyphens-auto">
             Unsere Großtagespflege befindet sich in einem freistehenden Haus, in
             der Erdgeschosswohnung. Die Wohnfläche der Wohnung beträgt 103 qm.
