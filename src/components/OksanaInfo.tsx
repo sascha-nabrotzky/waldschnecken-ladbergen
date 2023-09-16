@@ -47,17 +47,17 @@ const OksanaInfo: React.FC = () => {
 
       <dialog
         ref={modalRef2}
-        className="mx-4 pt-4 pb-8 px-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
+        className="mx-4 pt-4 pb-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
       >
         <div className="flex justify-end">
           <button
             onClick={closeModal2}
-            className="p-2 mb-2"
+            className="px-4 mb-2"
           >
             <CloseIcon className="h-6" />
           </button>
         </div>
-        <div className="text-xl">
+        <div className="text-xl px-8">
           Hallo, ich bin <strong>Oksana Welk,</strong> ich bin 1979 geboren, bin
           verheiratet und habe zwei eigene Kinder die 2004 und 2006 geboren
           sind. Ich habe den Beruf Einzelhandelskauffrau gelernt, und war

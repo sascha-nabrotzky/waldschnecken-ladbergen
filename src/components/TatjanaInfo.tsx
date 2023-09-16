@@ -45,17 +45,17 @@ const TatanaInfo: React.FC = () => {
 
       <dialog
         ref={modalRef1}
-        className="mx-4 pt-4 pb-8 px-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
+        className="mx-4 pt-4 pb-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
       >
         <div className="flex justify-end">
           <button
             onClick={closeModal1}
-            className="p-2 mb-2"
+            className="px-4 mb-2"
           >
             <CloseIcon className="h-6" />
           </button>
         </div>
-        <div className="text-xl">
+        <div className="text-xl px-8">
           Hallo, ich heiße <strong>Tatjana Nabrotzky,</strong> ich bin 1981
           geboren, bin verheiratet und habe zwei eigene Kinder die 2004 und 2008
           geboren sind. Ich bin seit 2002 staatlich anerkannte Erzieherin und
