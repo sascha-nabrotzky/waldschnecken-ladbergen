@@ -1,71 +1,56 @@
 import * as React from 'react'
+import { ReactComponent as SmallLeafsTop } from '../icons/small_leafs.svg'
+
+const text = [
+  {
+    title: 'Individuelle Betreuung:',
+    text: 'Wir gehen auf die Bedürfnisse jedes einzelnen Kindes ein.'
+  },
+  {
+    title: 'Familiäre Atmosphäre:',
+    text: 'Kinder fühlen sich bei uns sicher und geborgen.'
+  },
+  {
+    title: 'Flexibilität:',
+    text: 'Unsere Betreuungszeiten kommen Deinen individuellen Bedürfnissen entgegen.'
+  },
+  {
+    title: 'Konitnuität:',
+    text: 'Sicherheit und Vertrauen für Dein Kind, da wir konstante Bezugspersonen über einen längeren Zeitraum hinweg sind.'
+  },
+  {
+    title: 'Kleine Gruppengröße:',
+    text: 'Wir haben eine ruhige und weniger überfordernde Umgebung.'
+  },
+  {
+    title: 'Individuelle Förderung:',
+    text: 'Wir erkennen besser und fördern gezielter individuelle Fähigkeiten.'
+  },
+  {
+    title: 'Persönliche Beziehung:',
+    text: 'Wir pflegen eine enge und persönliche Beziehung zu Deinem Kind.'
+  }
+]
 
 const Advantages: React.FC = () => {
   return (
-    <section className="col-start-2 col-end-4 flex flex-col gap-6 text-xl text-center bg-whiskey-200 px-6 py-8 rounded-3xl">
-      <div>
-        <h3>Individuelle Betreuung:</h3>
-        <p className="mt-2">
-          <strong>
-            Wir gehen auf die Bedürfnisse jedes einzelnen Kindes ein.
-          </strong>
-        </p>
-      </div>
-      <hr className="mx-16 border-whiskey-50" />
-      <div>
-        <h3>Familiäre Atmosphäre:</h3>
-        <p className="mt-2">
-          <strong>Kinder fühlen sich bei uns sicher und geborgen.</strong>
-        </p>
-      </div>
-      <hr className="mx-16 border-whiskey-50" />
-      <div>
-        <h3>Flexibilität:</h3>
-        <p className="mt-2">
-          <strong>
-            Unsere Betreuungszeiten kommen Deinen individuellen Bedürfnissen
-            entgegen.
-          </strong>
-        </p>
-      </div>
-      <hr className="mx-16 border-whiskey-50" />
-      <div>
-        <h3>Konitnuität:</h3>
-        <p className="mt-2">
-          <strong>
-            Sicherheit und Vertrauen für Dein Kind, da wir konstante
-            Bezugspersonen über einen längeren Zeitraum hinweg sind.
-          </strong>
-        </p>
-      </div>
-      <hr className="mx-16 border-whiskey-50" />
-      <div>
-        <h3>Kleine Gruppengröße:</h3>
-        <p className="mt-2">
-          <strong>
-            Wir haben eine ruhige und weniger überfordernde Umgebung.
-          </strong>
-        </p>
-      </div>
-      <hr className="mx-16 border-whiskey-50" />
-      <div>
-        <h3>Individuelle Förderung:</h3>
-        <p className="mt-2">
-          <strong>
-            Wir erkennen besser und fördern gezielter individuelle Fähigkeiten.
-          </strong>
-        </p>
-      </div>
-      <hr className="mx-16 border-whiskey-50" />
-      <div>
-        <h3>Persönliche Beziehung:</h3>
-        <p className="mt-2">
-          <strong>
-            Wir pflegen eine enge und persönliche Beziehung zu Deinem Kind.
-          </strong>
-        </p>
-      </div>
-    </section>
+    <>
+      <section className="col-start-2 col-end-4 grid md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-6">
+        {text.map((item, index) => {
+          return (
+            <div key={index}>
+              <SmallLeafsTop className="mx-auto mb-1 w-12 h-12 text-battleship-gray-400" />
+              <div className="px-6 py-8 text-xl text-center bg-whiskey-200 rounded-3xl">
+                <h3>{item.title}</h3>
+                <p className="mt-2">
+                  <strong>{item.text}</strong>
+                </p>
+              </div>
+            </div>
+          )
+        })}
+      </section>
+    </>
   )
 }
 
