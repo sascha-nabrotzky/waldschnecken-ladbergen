@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             </Link>
           </div>
         </div>
-        <div className="opacity-50 whitespace-nowrap">
+        <div className="opacity-50">
           <a
             href="https://sascha-nabrotzky.github.io"
             target="_blank"
