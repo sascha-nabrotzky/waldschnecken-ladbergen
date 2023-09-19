@@ -18,7 +18,7 @@ const TatanaInfo: React.FC = () => {
 
   return (
     <div className="col-start-2 col-end-4 md:col-start-2 md:col-end-3 flex flex-col justify-center items-center text-center">
-      <div className="mb-4 bg-mine-shaft-200 w-36 aspect-square rounded-full overflow-hidden">
+      <div className="mb-4 bg-mine-shaft-200 w-36 md:w-48 aspect-square rounded-full overflow-hidden">
         <StaticImage
           src="../images/Tatjana.webp"
           alt="Foto von Tagesmutter Tatjana Nabrotzky"

@@ -38,9 +38,12 @@ const Advantages: React.FC = () => {
       <section className="col-start-2 col-end-4 grid md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-6">
         {text.map((item, index) => {
           return (
-            <div key={index}>
+            <div
+              className="flex flex-col"
+              key={index}
+            >
               <SmallLeafsTop className="mx-auto mb-1 w-12 h-12 text-battleship-gray-400" />
-              <div className="px-6 py-8 text-xl text-center bg-whiskey-200 rounded-3xl">
+              <div className="flex-1 px-6 py-8 text-xl text-center bg-whiskey-200 rounded-3xl">
                 <h3>{item.title}</h3>
                 <p className="mt-2">
                   <strong>{item.text}</strong>
