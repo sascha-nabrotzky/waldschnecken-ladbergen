@@ -80,7 +80,8 @@ module.exports = {
       gridTemplateColumns: {
         default:
           'minmax(2rem, 1fr) repeat(2, minmax(0, 25rem)) minmax(2rem, 1fr)',
-        imgBox: 'minmax(2rem, 1fr) repeat(4, 1fr) minmax( 2rem, 1fr)'
+        imgBox: 'minmax(2rem, 1fr) repeat(4, 1fr) minmax( 2rem, 1fr)',
+        sub: 'subgrid'
       },
       gridTemplateRows: {
         default: 'repeat(3, min-content) 1fr min-content'

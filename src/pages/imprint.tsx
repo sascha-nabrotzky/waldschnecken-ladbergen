@@ -35,6 +35,11 @@ const IndexPage: React.FC<PageProps> = () => {
             Tel.: 02551 69-2305
             <br />
             <br />
+          </p>
+          <p>
+            Fotos: Mina Romoser
+            <br />
+            <br />
             <br />
           </p>
           <h3 className="mb-2 text-2xl font-bold">Haftungsausschluss:</h3>

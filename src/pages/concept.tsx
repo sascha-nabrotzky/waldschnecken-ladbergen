@@ -1,11 +1,18 @@
 import * as React from 'react'
 import type { HeadFC, PageProps } from 'gatsby'
 import MainLayout from '../components/MainLayout'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <MainLayout pagetitle="Pädagogische Schwerpunkte">
+        <StaticImage
+          src="../images/kita-wohnzimmer-1.webp"
+          alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
+          className="col-start-2 md:col-start-3 col-end-4 rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"
+          placeholder="blurred"
+        />
         <section className="col-start-2 col-end-4">
           <h3 className="mb-2 text-2xl font-bold">Unser grundlegendes Ziel</h3>
           <p className="text-xl hyphens-auto">

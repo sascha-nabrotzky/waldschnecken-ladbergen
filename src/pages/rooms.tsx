@@ -7,6 +7,12 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <MainLayout pagetitle="Räume">
+        <StaticImage
+          src="../images/kita-wohnzimmer-1.webp"
+          alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
+          className="col-start-2 md:col-start-3 col-end-4 rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"
+          placeholder="blurred"
+        />
         <section className="col-start-2 col-end-4 text-xl">
           <p className="hyphens-auto">
             Unsere Großtagespflege befindet sich in einem freistehenden Haus, in

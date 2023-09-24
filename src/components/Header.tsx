@@ -6,19 +6,19 @@ import { ReactComponent as Waves } from '../images/waves.svg'
 const Header: React.FC = () => {
   return (
     <>
-      <div className="bg-roman-coffee-600">
+      <div className="bg-roman-coffee-400">
         <Logo className="h-24 mx-auto text-white" />
       </div>
 
       <header className="sticky top-0 flex flex-col items-center justify-center z-10">
-        <nav className="flex justify-center w-full gap-4 py-2 text-xl bg-roman-coffee-600 text-white">
+        <nav className="flex justify-center w-full gap-4 py-2 text-xl bg-roman-coffee-400 text-white shadow-xl">
           <Link to="/">Home</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/rooms">Räume</Link>
           <Link to="/concept">Konzept</Link>
         </nav>
       </header>
-      <Waves className="text-roman-coffee-600" />
+      <Waves className="text-roman-coffee-400" />
     </>
   )
 }

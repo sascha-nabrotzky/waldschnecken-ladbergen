@@ -12,6 +12,8 @@ const Address: React.FC = () => {
 
   return (
     <>
+      <TatanaInfo />
+      <OksanaInfo />
       <address className="col-start-2 col-end-4 text-xl not-italic">
         <h3 className="mb-2 font-bold text-center">
           Großtagespflege &bdquo;Waldschnecken&ldquo;
@@ -23,10 +25,6 @@ const Address: React.FC = () => {
           <br />
         </p>
       </address>
-
-      <TatanaInfo />
-      <OksanaInfo />
-
       <a
         href={`${currentMail}`}
         target="_blank"

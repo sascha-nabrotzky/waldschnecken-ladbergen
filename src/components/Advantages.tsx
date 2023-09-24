@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ReactComponent as SmallLeafsTop } from '../icons/small_leafs.svg'
+import { ReactComponent as Grass } from '../images/grass.svg'
 
 const text = [
   {
@@ -42,8 +42,8 @@ const Advantages: React.FC = () => {
               className="flex flex-col"
               key={index}
             >
-              <SmallLeafsTop className="mx-auto mb-1 w-12 h-12 text-battleship-gray-400" />
-              <div className="flex-1 px-6 py-8 text-xl text-center bg-whiskey-200 rounded-3xl">
+              <Grass className="mx-auto h-12 text-battleship-gray-200" />
+              <div className="flex-1 px-6 py-8 text-xl text-center bg-whiskey-200 rounded-3xl bg-gradient-to-b from-battleship-gray-200 via-whiskey-200 to-whiskey-200">
                 <h3>{item.title}</h3>
                 <p className="mt-2">
                   <strong>{item.text}</strong>
