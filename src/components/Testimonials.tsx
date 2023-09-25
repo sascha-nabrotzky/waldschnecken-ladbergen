@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const Testimonials: React.FC = () => {
   return (
-    <blockquote className="col-start-2 col-end-4 text-center">
+    <blockquote className="col-start-2 col-end-4 max-w-xl text-center mx-auto">
       <p className="text-7xl font-bold font-serif text-battleship-gray-400">
         &ldquo; &rdquo;
       </p>

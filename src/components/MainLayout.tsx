@@ -14,7 +14,7 @@ const MainContent: React.FC<Props> = ({ children, pagetitle, subtitle }) => {
       <main className="grid grid-cols-default md:gap-x-16 gap-y-16 md:gap-y-20 my-6 md:-mt-40">
         {pagetitle != null && (
           <div className="col-start-2 col-end-4 md:col-end-3">
-            <h1 className="font-serif text-3xl lg:text-5xl text-center md:text-left break-word">
+            <h1 className="font-serif text-3xl lg:text-5xl text-center md:text-left break-word leading-4.5">
               {pagetitle}
             </h1>
             {subtitle != null && (
