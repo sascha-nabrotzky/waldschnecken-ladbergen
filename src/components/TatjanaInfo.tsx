@@ -45,7 +45,7 @@ const TatanaInfo: React.FC = () => {
 
       <dialog
         ref={modalRef1}
-        className="mx-4 pt-4 pb-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
+        className="mx-4 sm:mx-auto pt-4 pb-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
       >
         <div className="flex justify-end">
           <button
