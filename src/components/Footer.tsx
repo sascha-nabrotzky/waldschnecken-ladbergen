@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="relative bottom-0 right-0 left-0">
       <WavesRight className="text-roman-coffee-400" />
-      <nav className="grid grid-cols-default md:gap-x-16 px-10 pb-12 text-md bg-roman-coffee-400 text-right text-white">
+      <nav className="grid grid-cols-default md:gap-x-16 max-sm:gap-y-2 px-10 pb-12 text-md bg-roman-coffee-400 text-right text-white">
         <div className="col-start-2 col-end-4 flex justify-between">
-          <div className="flex gap-8">
+          <div className="flex flex-wrap gap-x-8">
             <a
               href="https://www.instagram.com/waldschnecken/"
               target="_blank"
