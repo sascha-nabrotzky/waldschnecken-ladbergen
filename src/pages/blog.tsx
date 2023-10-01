@@ -31,7 +31,7 @@ const IndexPage: React.FC<PageProps> = () => {
         subtitle="und erlebt mit, was Eure Kinder erleben."
       >
         <StaticImage
-          src="../images/kita-wohnzimmer-1.webp"
+          src="../images/placeholder.jpg"
           alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
           className="col-start-2 md:col-start-3 col-end-4 aspect-square rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"
           placeholder="blurred"

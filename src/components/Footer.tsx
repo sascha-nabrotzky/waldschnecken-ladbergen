@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { ReactComponent as WavesRight } from '../images/waves-right.svg'
 import { ReactComponent as Instagram } from '../icons/instagram.svg'
+import { ReactComponent as Step } from '../icons/StepLogo.svg'
 
 const Footer: React.FC = () => {
   return (
@@ -9,24 +10,34 @@ const Footer: React.FC = () => {
       <WavesRight className="text-roman-coffee-400" />
       <nav className="grid grid-cols-default md:gap-x-16 px-10 pb-12 text-md bg-roman-coffee-400 text-right text-white">
         <div className="col-start-2 col-end-4 flex justify-between">
-          <a
-            href="https://www.instagram.com/waldschnecken/"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="p-2"
-          >
-            <Instagram className="h-10" />
-          </a>
+          <div className="flex gap-8">
+            <a
+              href="https://www.instagram.com/waldschnecken/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="p-2 hover:opacity-50 transition-opacity duration-300"
+            >
+              <Instagram className="h-10" />
+            </a>
+            <a
+              href="https://step.kreis-steinfurt.de/de/einrichtungen/liste/ergebnisse/1055/details?p=1&amt=Ladbergen"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="p-2 hover:opacity-50 transition-opacity duration-300"
+            >
+              <Step className="h-10" />
+            </a>
+          </div>
           <div className="flex flex-col">
             <Link
               to="/imprint"
-              className="mb-2"
+              className="mb-2 hover:opacity-50 transition-opacity duration-300"
             >
               Impressum
             </Link>
             <Link
               to="/privacypolicy"
-              className="mb-8"
+              className="mb-8 hover:opacity-50 transition-opacity duration-300"
             >
               Datenschutz
             </Link>
