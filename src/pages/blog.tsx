@@ -27,8 +27,8 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <MainLayout
-        pagetitle="Schnuppert in unser Alltagsleben rein"
-        subtitle="und erlebt mit, was Eure Kinder erleben."
+        pagetitle="Unser Alltagsleben"
+        subtitle="Seht was Eure Kinder alles erleben."
       >
         <StaticImage
           src="../images/placeholder.jpg"
