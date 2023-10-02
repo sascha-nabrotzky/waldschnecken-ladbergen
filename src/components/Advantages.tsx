@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 import { ReactComponent as Grass } from '../images/grass.svg'
 
 const text = [
@@ -53,12 +52,6 @@ const Advantages: React.FC = () => {
             </div>
           )
         })}
-        <StaticImage
-          src="../images/Pilz_rot.webp"
-          alt="Illustration roter Pilz von Sascha Nabrotzky"
-          className="absolute right-0 bottom-0 max-sm:translate-x-5 max-sm:translate-y-12"
-          placeholder="blurred"
-        />
       </section>
     </>
   )
