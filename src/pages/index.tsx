@@ -25,6 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
           className="col-start-2 col-end-4 mx-auto"
           placeholder="blurred"
         />
+
         <Testimonials />
         <Advantages />
         <Contact />

@@ -6,7 +6,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
-      <MainLayout pagetitle="Pädagogische Schwerpunkte">
+      <MainLayout
+        pagetitle="Pädagogische Schwerpunkte"
+        subtitle="Natürlicher Tagesablauf und Bewegung an der frischen Luft"
+      >
         <StaticImage
           src="../images/placeholder.jpg"
           alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"

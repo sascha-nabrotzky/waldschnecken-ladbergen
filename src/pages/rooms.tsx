@@ -6,7 +6,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
-      <MainLayout pagetitle="Räume">
+      <MainLayout
+        pagetitle="Räume"
+        subtitle="Unsere Großtagespflege befindet sich in einem freistehenden Haus, in der Erdgeschosswohnung "
+      >
         <StaticImage
           src="../images/placeholder.jpg"
           alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
@@ -15,9 +18,8 @@ const IndexPage: React.FC<PageProps> = () => {
         />
         <section className="col-start-2 col-end-4 text-xl">
           <p className="hyphens-auto">
-            Unsere Großtagespflege befindet sich in einem freistehenden Haus, in
-            der Erdgeschosswohnung. Die Wohnfläche der Wohnung beträgt 103 qm.
-            Die Gruppe besteht in der Regel aus 9 Kindern.
+            Die Wohnfläche der Wohnung beträgt 103 qm. Die Gruppe besteht in der
+            Regel aus 9 Kindern.
           </p>
           <StaticImage
             src="../images/kita-wohnzimmer-1.webp"
