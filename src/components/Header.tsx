@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { ReactComponent as Logo } from '../icons/logo.svg'
-import { ReactComponent as Waves } from '../images/waves.svg'
+import { ReactComponent as WavesTop } from '../images/waves-top.svg'
 
 const Header: React.FC = () => {
   return (
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           </Link>
         </nav>
       </header>
-      <Waves className="text-roman-coffee-400" />
+      <WavesTop className="text-roman-coffee-400" />
     </>
   )
 }

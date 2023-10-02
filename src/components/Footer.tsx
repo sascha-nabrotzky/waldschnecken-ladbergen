@@ -1,14 +1,14 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { ReactComponent as WavesRight } from '../images/waves-right.svg'
+import { ReactComponent as WavesBottom } from '../images/waves-bottom.svg'
 import { ReactComponent as Instagram } from '../icons/instagram.svg'
 import { ReactComponent as Step } from '../icons/StepLogo.svg'
 
 const Footer: React.FC = () => {
   return (
     <footer className="relative bottom-0 right-0 left-0">
-      <WavesRight className="text-roman-coffee-400" />
-      <nav className="grid grid-cols-default md:gap-x-16 max-sm:gap-y-2 px-10 pb-12 text-md bg-roman-coffee-400 text-right text-white">
+      <WavesBottom className="text-roman-coffee-400" />
+      <nav className="grid grid-cols-default md:gap-x-16 max-sm:gap-y-2 pb-12 text-md bg-roman-coffee-400 text-right text-white">
         <div className="col-start-2 col-end-4 flex justify-between">
           <div className="flex flex-wrap gap-x-8">
             <a

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import TatanaInfo from './TatjanaInfo'
 import OksanaInfo from './OksanaInfo'
+import { ReactComponent as EmailIcon } from '../icons/email.svg'
 
 const Address: React.FC = () => {
   const [currentMail, setMail] = React.useState('')
@@ -25,15 +26,18 @@ const Address: React.FC = () => {
           <br />
         </p>
       </address>
-      <a
-        href={`${currentMail}`}
-        target="_blank"
-        rel="noreferrer"
-        onClick={addMail}
-        className="col-start-2 col-end-4 block font-bold text-xl text-center"
-      >
-        E-Mail schreiben
-      </a>
+      <div className="col-start-2 col-end-4 text-xl text-center">
+        <a
+          href={`${currentMail}`}
+          target="_blank"
+          rel="noreferrer"
+          onClick={addMail}
+          className="hover:opacity-50 transition-opacity duration-300"
+        >
+          <EmailIcon className="h-8 mx-auto mb-2" />
+          E-Mail schreiben
+        </a>
+      </div>
     </>
   )
 }

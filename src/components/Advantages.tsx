@@ -12,11 +12,11 @@ const text = [
   },
   {
     title: 'Flexibilität:',
-    text: 'Unsere Betreuungszeiten kommen Deinen individuellen Bedürfnissen entgegen.'
+    text: 'Betreuungszeiten kommen individuellen Bedürfnissen entgegen.'
   },
   {
     title: 'Konitnuität:',
-    text: 'Sicherheit und Vertrauen für Dein Kind, da wir konstante Bezugspersonen über einen längeren Zeitraum hinweg sind.'
+    text: 'Konstante Bezugspersonen über einen längeren Zeitraum hinweg.'
   },
   {
     title: 'Kleine Gruppengröße:',
