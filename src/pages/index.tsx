@@ -12,13 +12,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <MainLayout
         pagetitle="Kindertagespflege mit dem Herzen in der Natur"
         subtitle="Liebevolle und naturbezogene Betreuung Deines Kindes."
+        isHerotitle
       >
-        <StaticImage
-          src="../images/kita-wohnzimmer-1.webp"
-          alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
-          className="col-start-2 md:col-start-3 col-end-4 mx-auto aspect-square max-w-md rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"
-          placeholder="blurred"
-        />
         <StaticImage
           src="../images/Logo_Waldschnecken.webp"
           alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"

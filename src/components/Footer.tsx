@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             rel="noreferrer noopener"
             className="underline"
           >
-            Webdesign
+            Webentwicklung
           </a>{' '}
           &{' '}
           <a
