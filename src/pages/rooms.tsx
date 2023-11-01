@@ -11,8 +11,8 @@ const IndexPage: React.FC<PageProps> = () => {
         subtitle="Unsere Großtagespflege befindet sich in einem freistehenden Haus, in der Erdgeschosswohnung "
       >
         <StaticImage
-          src="../images/placeholder.jpg"
-          alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
+          src="../images/Sei_mutig.webp"
+          alt="Illustration eines Bären von Sascha Nabrotzky"
           className="col-start-2 md:col-start-3 col-end-4 mx-auto max-w-md aspect-square rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"
           placeholder="blurred"
         />
@@ -75,8 +75,6 @@ const IndexPage: React.FC<PageProps> = () => {
             einen Wickelbereich. Die Garderobe befindet sich im Eingangsflur.
           </p>
 
-          <h3 className="mt-8 mb-2 text-xl font-bold">Außenanlage</h3>
-
           <StaticImage
             src="../images/kita-aussen-1.webp"
             alt="Foto vom Außengelände"
@@ -85,14 +83,14 @@ const IndexPage: React.FC<PageProps> = () => {
           />
 
           <p className="hyphens-auto">
-            &#8593; Das Außengelände bietet viele unterschiedliche
-            Spielmöglichkeiten, wie einen großen Sandkasten, ein Spielgerüst zum
-            Klettern, Rutschen und Balancieren. Des Weiteren befinden sich noch
-            zwei Schaukeln und ein großer Fahrzeugebereich, der mit Gummimatten
-            ausgelegt ist. Die überdachte Terrasse ist ideal um dort im Sommer
-            gemütlich zu frühstücken und außerdem schützt sie uns vor Sonne oder
-            Regen. Es befinden sich viele Pflanzen und Bäume im Garten und im
-            Sommer bauen wir gemeinsam Obst und Gemüse an.
+            &#8593; Das <strong>Außengelände</strong> bietet viele
+            unterschiedliche Spielmöglichkeiten, wie einen großen Sandkasten,
+            ein Spielgerüst zum Klettern, Rutschen und Balancieren. Des Weiteren
+            befinden sich noch zwei Schaukeln und ein großer Fahrzeugebereich,
+            der mit Gummimatten ausgelegt ist. Die überdachte Terrasse ist ideal
+            um dort im Sommer gemütlich zu frühstücken und außerdem schützt sie
+            uns vor Sonne oder Regen. Es befinden sich viele Pflanzen und Bäume
+            im Garten und im Sommer bauen wir gemeinsam Obst und Gemüse an.
           </p>
         </section>
       </MainLayout>

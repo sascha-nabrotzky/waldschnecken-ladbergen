@@ -11,8 +11,8 @@ const IndexPage: React.FC<PageProps> = () => {
         subtitle="Natürlicher Tagesablauf und Bewegung an der frischen Luft"
       >
         <StaticImage
-          src="../images/placeholder.jpg"
-          alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
+          src="../images/Sei_entspannt.webp"
+          alt="Illustration eines Igels von Sascha Nabrotzky"
           className="col-start-2 md:col-start-3 col-end-4 mx-auto aspect-square max-w-md rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"
           placeholder="blurred"
         />
