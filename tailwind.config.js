@@ -85,6 +85,17 @@ module.exports = {
       },
       gridTemplateRows: {
         default: 'repeat(3, min-content) 1fr min-content'
+      },
+      animation: {
+        slideUp: 'clear 1s ease-in-out forwards'
+      },
+      keyframes: {
+        clear: {
+          '100%': {
+            opacity: 1,
+            transform: 'translateY(0px)'
+          }
+        }
       }
     }
   },

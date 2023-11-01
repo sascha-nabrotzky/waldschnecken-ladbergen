@@ -33,13 +33,37 @@ const text = [
 ]
 
 const Advantages: React.FC = () => {
+  React.useEffect(() => {
+    const options = {
+      root: null,
+      threshold: 0.9
+    }
+
+    const toggleClass = (entries: any, observer: any): void => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting === false) {
+          return
+        }
+        entry.target.classList.toggle('animate-slideUp', entry.isIntersecting)
+        observer.unobserve(entry.target)
+      })
+    }
+
+    const targets = document.querySelectorAll('.advantage')
+    const observer = new IntersectionObserver(toggleClass, options)
+
+    targets.forEach((target) => {
+      observer.observe(target)
+    })
+  }, [])
+
   return (
     <>
       <section className="relative col-start-2 col-end-4 grid md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-6">
         {text.map((item, index) => {
           return (
             <div
-              className="flex flex-col"
+              className="advantage flex flex-col opacity-0 translate-y-12"
               key={index}
             >
               <Grass className="mx-auto h-12 text-battleship-gray-200" />
