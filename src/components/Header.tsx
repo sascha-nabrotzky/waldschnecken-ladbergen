@@ -39,7 +39,8 @@ const Header: React.FC = () => {
           </Link>
         </nav>
       </header>
-      <WavesTop className="text-roman-coffee-400" />
+
+      <WavesTop className="text-roman-coffee-400 xl:origin-top-right xl:rotate-6" />
     </>
   )
 }
