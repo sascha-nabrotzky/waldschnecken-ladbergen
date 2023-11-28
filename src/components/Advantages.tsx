@@ -36,7 +36,7 @@ const Advantages: React.FC = () => {
   React.useEffect(() => {
     const options = {
       root: null,
-      threshold: 0.9
+      threshold: 0.2
     }
 
     const toggleClass = (entries: any, observer: any): void => {
