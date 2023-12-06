@@ -11,7 +11,8 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <MainLayout
         pagetitle="Kindertagespflege mit dem Herzen in der Natur"
-        subtitle="Liebevolle und naturbezogene Betreuung Deines Kindes."
+        subtitle="Liebevolle und naturbezogene Betreuung Ihrer Kinder in
+        Ladbergen durch die Tagesmütter Tatjana Nabrotzky und Oksana Welk."
         isHerotitle
       >
         <StaticImage
