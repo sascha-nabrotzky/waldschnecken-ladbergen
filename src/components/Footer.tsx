@@ -16,6 +16,7 @@ const Footer: React.FC = () => {
                 href="https://www.instagram.com/waldschnecken/"
                 target="_blank"
                 rel="noreferrer noopener"
+                aria-label="Instagram-Account der Waldschnecken"
                 className="p-2 hover:opacity-50 transition-opacity duration-300"
               >
                 <Instagram className="h-10" />
@@ -24,6 +25,7 @@ const Footer: React.FC = () => {
                 href="https://step.kreis-steinfurt.de/de/einrichtungen/liste/ergebnisse/1055/details?p=1&amt=Ladbergen"
                 target="_blank"
                 rel="noreferrer noopener"
+                aria-label="STEP - Das Anmeldeportal für Kindertageseinrichtungen im Kreis Steinfurt"
                 className="p-2 hover:opacity-50 transition-opacity duration-300"
               >
                 <Step className="h-10" />
