@@ -38,7 +38,7 @@ const TatanaInfo: React.FC = () => {
       </a>
       <button
         onClick={openModal1}
-        className="mt-4 pt-1.5 pb-2 px-4 text-xl text-white rounded-full bg-mine-shaft-400 leading-none hover:opacity-50 transition-opacity duration-300"
+        className="mt-4 pt-1.5 pb-2 px-4 text-xl text-white rounded-full bg-mine-shaft-600 leading-none hover:opacity-50 transition-opacity duration-300"
       >
         Info
       </button>
