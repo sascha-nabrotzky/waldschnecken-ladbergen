@@ -32,24 +32,24 @@ const Footer: React.FC = () => {
             <div className="flex flex-col">
               <Link
                 to="/imprint"
-                className="mb-2 hover:opacity-50 transition-opacity duration-300"
+                className="mb-2 text-lg hover:opacity-50 transition-opacity duration-300"
               >
                 Impressum
               </Link>
               <Link
                 to="/privacypolicy"
-                className="mb-8 hover:opacity-50 transition-opacity duration-300"
+                className="mb-8 text-lg hover:opacity-50 transition-opacity duration-300"
               >
                 Datenschutz
               </Link>
             </div>
           </div>
-          <div className="col-start-2 col-end-4 opacity-60">
+          <div className="col-start-2 col-end-4">
             <a
               href="https://sascha-nabrotzky.github.io"
               target="_blank"
               rel="noreferrer noopener"
-              className="underline"
+              className="hover:opacity-50 transition-opacity duration-300 underline"
             >
               Webdesign
             </a>{' '}
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
               href="https://www.instagram.com/sascha.illustrates"
               target="_blank"
               rel="noreferrer noopener"
-              className="underline"
+              className="hover:opacity-50 transition-opacity duration-300 underline"
             >
               Illustration
             </a>{' '}

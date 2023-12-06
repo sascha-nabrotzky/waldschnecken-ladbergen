@@ -31,7 +31,7 @@ const TatanaInfo: React.FC = () => {
           <br />
           <strong className="tracking-wider">0170 2802494</strong>
         </p>
-        <p className="mt-1 leading-5 border-t pt-2 text-mine-shaft-400">
+        <p className="mt-1 leading-5 border-t pt-2 text-mine-shaft-600">
           Staatl. geprüfte Erzieherin <br />
           und zertifizierte Tagesmutter
         </p>
