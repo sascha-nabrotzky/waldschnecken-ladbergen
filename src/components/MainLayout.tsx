@@ -17,7 +17,10 @@ const MainContent: React.FC<Props> = ({
   return (
     <div className="grid grid-rows-default min-h-[100dvh] text-mine-shaft-950">
       <Header />
-      <main className="grid grid-cols-default md:gap-x-16 gap-y-16 md:gap-y-20 my-6 lg:-mt-10 xl:-mt-40 xl:-mb-20 z-10">
+      <main
+        className="grid grid-cols-default md:gap-x-16 gap-y-16 md:gap-y-20 my-6 lg:-mt-10 xl:-mt-40 xl:-mb-20 z-10"
+        role="main"
+      >
         {pagetitle != null && (
           <div
             className={`col-start-2 col-end-4 text-center ${
@@ -25,6 +28,7 @@ const MainContent: React.FC<Props> = ({
                 ? 'md:col-end-4'
                 : 'md:col-end-3 md:text-left'
             }`}
+            role="heading"
           >
             <h1
               className={

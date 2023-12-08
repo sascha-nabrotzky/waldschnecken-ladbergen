@@ -8,7 +8,10 @@ const Footer: React.FC = () => {
   return (
     <>
       <WavesBottom className="text-roman-coffee-600" />
-      <footer className="relative bottom-0 right-0 left-0">
+      <footer
+        className="relative bottom-0 right-0 left-0"
+        role="navigation"
+      >
         <nav className="grid grid-cols-default md:gap-x-16 max-sm:gap-y-2 pb-12 text-md bg-roman-coffee-600 text-right text-white">
           <div className="col-start-2 col-end-4 flex justify-between">
             <div className="flex flex-wrap gap-x-8">
