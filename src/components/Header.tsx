@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         <Logo className="h-24 mx-auto text-white" />
       </div>
 
-      <header className="sticky top-0 flex flex-col justify-center z-10">
+      <header className="sticky top-0 flex flex-col justify-center z-20">
         <nav className="flex items-center justify-center w-full gap-4 py-2 text-xl bg-roman-coffee-600 text-white shadow-xl">
           <Link
             to="/"
