@@ -41,7 +41,9 @@ const Address: React.FC = () => {
           <EmailIcon className="h-8 mx-auto mb-2" />
           E-Mail schreiben
         </a>
-        <p className="mt-2 pt-2 font-bold border-t">{showMail}</p>
+        {showMail.length > 0 && (
+          <p className="mt-2 pt-2 font-bold border-t">{showMail}</p>
+        )}
       </div>
     </>
   )

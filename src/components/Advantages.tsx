@@ -37,43 +37,36 @@ const text = [
 ]
 
 const Advantages: React.FC = () => {
-  const AnimationNotDone = sessionStorage.getItem('AdvantagesAnimation') == null
+  React.useEffect(() => {
+    const options = {
+      root: null,
+      threshold: 0.2
+    }
 
-  if (AnimationNotDone) {
-    React.useEffect(() => {
-      const options = {
-        root: null,
-        threshold: 0.2
-      }
-
-      const toggleClass = (entries: any, observer: any): void => {
-        entries.forEach((entry: any) => {
-          if (entry.isIntersecting === false) {
-            return
-          }
-          entry.target.classList.toggle('animate-slideUp', entry.isIntersecting)
-          sessionStorage.setItem('AdvantagesAnimation', 'true')
-          observer.unobserve(entry.target)
-        })
-      }
-
-      const targets = document.querySelectorAll('.advantage')
-      const observer = new IntersectionObserver(toggleClass, options)
-
-      targets.forEach((target) => {
-        observer.observe(target)
+    const toggleClass = (entries: any, observer: any): void => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting === false) {
+          return
+        }
+        entry.target.classList.toggle('animate-slideUp', entry.isIntersecting)
+        observer.unobserve(entry.target)
       })
-    }, [])
-  }
+    }
+
+    const targets = document.querySelectorAll('.advantage')
+    const observer = new IntersectionObserver(toggleClass, options)
+
+    targets.forEach((target) => {
+      observer.observe(target)
+    })
+  }, [])
 
   return (
     <section className="relative col-start-2 col-end-4 grid md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-6">
       {text.map((item, index) => {
         return (
           <div
-            className={`advantage flex flex-col ${
-              AnimationNotDone ? 'opacity-0 translate-y-12' : ''
-            } `}
+            className="advantage flex flex-col opacity-0 translate-y-12"
             key={index}
           >
             <Grass className="mx-auto h-12 text-battleship-gray-200" />
