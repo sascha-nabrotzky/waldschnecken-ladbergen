@@ -4,11 +4,15 @@ import OksanaInfo from './OksanaInfo'
 import { ReactComponent as EmailIcon } from '../icons/email.svg'
 
 const Address: React.FC = () => {
-  const [currentMail, setMail] = React.useState('')
   const mailto = 'mailto:kontakt@waldschnecken-ladbergen.de'
+  const eMailAddress = 'kontakt@waldschnecken-ladbergen.de'
+
+  const [currentMail, setMail] = React.useState('')
+  const [showMail, setShowMail] = React.useState('')
 
   const addMail = (): void => {
     setMail(mailto)
+    setShowMail(eMailAddress)
   }
 
   return (
@@ -35,7 +39,8 @@ const Address: React.FC = () => {
           className="hover:opacity-50 transition-opacity duration-300"
         >
           <EmailIcon className="h-8 mx-auto mb-2" />
-          E-Mail schreiben
+          <p>E-Mail schreiben</p>
+          <p className="mt-2 font-bold">{showMail}</p>
         </a>
       </div>
     </>

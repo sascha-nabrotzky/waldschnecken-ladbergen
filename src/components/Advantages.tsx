@@ -63,28 +63,26 @@ const Advantages: React.FC = () => {
   }
 
   return (
-    <>
-      <section className="relative col-start-2 col-end-4 grid md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-6">
-        {text.map((item, index) => {
-          return (
-            <div
-              className={`advantage flex flex-col ${
-                AnimationNotDone ? 'opacity-0 translate-y-12' : ''
-              } `}
-              key={index}
-            >
-              <Grass className="mx-auto h-12 text-battleship-gray-200" />
-              <div className="flex-1 px-6 py-8 text-xl text-center bg-whiskey-200 rounded-3xl bg-gradient-to-b from-battleship-gray-200 via-whiskey-200 to-whiskey-200">
-                <h3>{item.title}</h3>
-                <p className="mt-2">
-                  <strong>{item.text}</strong>
-                </p>
-              </div>
+    <section className="relative col-start-2 col-end-4 grid md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-6">
+      {text.map((item, index) => {
+        return (
+          <div
+            className={`advantage flex flex-col ${
+              AnimationNotDone ? 'opacity-0 translate-y-12' : ''
+            } `}
+            key={index}
+          >
+            <Grass className="mx-auto h-12 text-battleship-gray-200" />
+            <div className="flex-1 px-6 py-8 text-xl text-center bg-whiskey-200 rounded-3xl bg-gradient-to-b from-battleship-gray-200 via-whiskey-200 to-whiskey-200">
+              <h3>{item.title}</h3>
+              <p className="mt-2">
+                <strong>{item.text}</strong>
+              </p>
             </div>
-          )
-        })}
-      </section>
-    </>
+          </div>
+        )
+      })}
+    </section>
   )
 }
 
