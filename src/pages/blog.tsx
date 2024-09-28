@@ -28,7 +28,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <MainLayout
         pagetitle="Unser Alltagsleben"
-        subtitle="Seht was Eure Kinder alles erleben."
+        subtitle="Seht was Eure Kinder alles erleben oder wir euch sonst noch mitteilen wollen."
       >
         <StaticImage
           src="../images/Sei_frech.webp"
@@ -106,7 +106,7 @@ export default IndexPage
 export const Head: HeadFC = () => (
   <>
     <html lang="de" />
-    <title>Blog | Waldschnecken</title>
+    <title>Blog/News | Waldschnecken</title>
     <meta
       name="description"
       content="Bekommt einen kleinen Einblick in unseren täglichen Erlebnissen"

@@ -7,6 +7,10 @@ const text = [
     text: 'Wir gehen auf die Bedürfnisse jedes einzelnen Kindes ein.'
   },
   {
+    title: 'Inklusion (ab 2025):',
+    text: 'Betreuung von Kindern mit erhöhtem Pflegeaufwand.'
+  },
+  {
     title: 'Familiäre Atmosphäre:',
     text: 'Kinder fühlen sich bei uns sicher und geborgen.'
   },

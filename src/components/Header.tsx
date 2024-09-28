@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             to="/blog"
             className="hover:opacity-50 transition-opacity duration-300"
           >
-            Blog
+            Blog/News
           </Link>
         </nav>
       </header>
