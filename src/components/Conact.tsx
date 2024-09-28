@@ -39,9 +39,9 @@ const Address: React.FC = () => {
           className="hover:opacity-50 transition-opacity duration-300"
         >
           <EmailIcon className="h-8 mx-auto mb-2" />
-          <p>E-Mail schreiben</p>
-          <p className="mt-2 font-bold">{showMail}</p>
+          E-Mail schreiben
         </a>
+        <p className="mt-2 pt-2 font-bold border-t">{showMail}</p>
       </div>
     </>
   )

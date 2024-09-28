@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
             </a>{' '}
             &{' '}
             <a
-              href="https://www.instagram.com/sascha.illustrates"
+              href="https://sascha-nabrotzky.de"
               target="_blank"
               rel="noreferrer noopener"
               className="hover:opacity-50 transition-opacity duration-300 underline"
