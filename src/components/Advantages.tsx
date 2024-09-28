@@ -33,29 +33,34 @@ const text = [
 ]
 
 const Advantages: React.FC = () => {
-  React.useEffect(() => {
-    const options = {
-      root: null,
-      threshold: 0.2
-    }
+  const AnimationNotDone = sessionStorage.getItem('AdvantagesAnimation') == null
 
-    const toggleClass = (entries: any, observer: any): void => {
-      entries.forEach((entry: any) => {
-        if (entry.isIntersecting === false) {
-          return
-        }
-        entry.target.classList.toggle('animate-slideUp', entry.isIntersecting)
-        observer.unobserve(entry.target)
+  if (AnimationNotDone) {
+    React.useEffect(() => {
+      const options = {
+        root: null,
+        threshold: 0.2
+      }
+
+      const toggleClass = (entries: any, observer: any): void => {
+        entries.forEach((entry: any) => {
+          if (entry.isIntersecting === false) {
+            return
+          }
+          entry.target.classList.toggle('animate-slideUp', entry.isIntersecting)
+          sessionStorage.setItem('AdvantagesAnimation', 'true')
+          observer.unobserve(entry.target)
+        })
+      }
+
+      const targets = document.querySelectorAll('.advantage')
+      const observer = new IntersectionObserver(toggleClass, options)
+
+      targets.forEach((target) => {
+        observer.observe(target)
       })
-    }
-
-    const targets = document.querySelectorAll('.advantage')
-    const observer = new IntersectionObserver(toggleClass, options)
-
-    targets.forEach((target) => {
-      observer.observe(target)
-    })
-  }, [])
+    }, [])
+  }
 
   return (
     <>
@@ -63,7 +68,9 @@ const Advantages: React.FC = () => {
         {text.map((item, index) => {
           return (
             <div
-              className="advantage flex flex-col opacity-0 translate-y-12"
+              className={`advantage flex flex-col ${
+                AnimationNotDone ? 'opacity-0 translate-y-12' : ''
+              } `}
               key={index}
             >
               <Grass className="mx-auto h-12 text-battleship-gray-200" />
