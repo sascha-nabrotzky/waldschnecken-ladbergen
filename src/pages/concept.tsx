@@ -1,11 +1,21 @@
 import * as React from 'react'
 import type { HeadFC, PageProps } from 'gatsby'
 import MainLayout from '../components/MainLayout'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
-      <MainLayout pagetitle="Pädagogische Schwerpunkte">
+      <MainLayout
+        pagetitle="Pädagogische Schwerpunkte"
+        subtitle="Natürlicher Tagesablauf und Bewegung an der frischen Luft"
+      >
+        <StaticImage
+          src="../images/Sei_entspannt.webp"
+          alt="Illustration eines Igels von Sascha Nabrotzky"
+          className="col-start-2 md:col-start-3 col-end-4 mx-auto aspect-square max-w-md rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"
+          placeholder="blurred"
+        />
         <section className="col-start-2 col-end-4">
           <h3 className="mb-2 text-2xl font-bold">Unser grundlegendes Ziel</h3>
           <p className="text-xl hyphens-auto">

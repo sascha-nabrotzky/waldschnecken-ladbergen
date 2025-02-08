@@ -11,7 +11,9 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <MainLayout
         pagetitle="Kindertagespflege mit dem Herzen in der Natur"
-        subtitle="Liebevolle, naturbezogene und professionelle Betreuung Deines Kindes."
+        subtitle="Liebevolle und naturbezogene Betreuung Ihrer Kinder in
+        Ladbergen durch die Tagesmütter Tatjana Nabrotzky und Oksana Welk."
+        isHerotitle
       >
         <StaticImage
           src="../images/Logo_Waldschnecken.webp"
@@ -19,6 +21,7 @@ const IndexPage: React.FC<PageProps> = () => {
           className="col-start-2 col-end-4 mx-auto"
           placeholder="blurred"
         />
+
         <Testimonials />
         <Advantages />
         <Contact />

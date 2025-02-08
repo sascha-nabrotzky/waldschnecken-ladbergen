@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ReactComponent as SmallLeafsTop } from '../icons/small_leafs.svg'
+import { ReactComponent as Grass } from '../images/grass.svg'
 
 const text = [
   {
@@ -7,16 +7,20 @@ const text = [
     text: 'Wir gehen auf die Bedürfnisse jedes einzelnen Kindes ein.'
   },
   {
+    title: 'Inklusion (ab 2025):',
+    text: 'Betreuung von Kindern mit erhöhtem Pflegeaufwand.'
+  },
+  {
     title: 'Familiäre Atmosphäre:',
     text: 'Kinder fühlen sich bei uns sicher und geborgen.'
   },
   {
     title: 'Flexibilität:',
-    text: 'Unsere Betreuungszeiten kommen Deinen individuellen Bedürfnissen entgegen.'
+    text: 'Betreuungszeiten kommen individuellen Bedürfnissen entgegen.'
   },
   {
     title: 'Konitnuität:',
-    text: 'Sicherheit und Vertrauen für Dein Kind, da wir konstante Bezugspersonen über einen längeren Zeitraum hinweg sind.'
+    text: 'Konstante Bezugspersonen über einen längeren Zeitraum hinweg.'
   },
   {
     title: 'Kleine Gruppengröße:',
@@ -33,27 +37,49 @@ const text = [
 ]
 
 const Advantages: React.FC = () => {
+  React.useEffect(() => {
+    const options = {
+      root: null,
+      threshold: 0.2
+    }
+
+    const toggleClass = (entries: any, observer: any): void => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting === false) {
+          return
+        }
+        entry.target.classList.toggle('animate-slideUp', entry.isIntersecting)
+        observer.unobserve(entry.target)
+      })
+    }
+
+    const targets = document.querySelectorAll('.advantage')
+    const observer = new IntersectionObserver(toggleClass, options)
+
+    targets.forEach((target) => {
+      observer.observe(target)
+    })
+  }, [])
+
   return (
-    <>
-      <section className="col-start-2 col-end-4 grid md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-6">
-        {text.map((item, index) => {
-          return (
-            <div
-              className="flex flex-col"
-              key={index}
-            >
-              <SmallLeafsTop className="mx-auto mb-1 w-12 h-12 text-battleship-gray-400" />
-              <div className="flex-1 px-6 py-8 text-xl text-center bg-whiskey-200 rounded-3xl">
-                <h3>{item.title}</h3>
-                <p className="mt-2">
-                  <strong>{item.text}</strong>
-                </p>
-              </div>
+    <section className="relative col-start-2 col-end-4 grid md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-6">
+      {text.map((item, index) => {
+        return (
+          <div
+            className="advantage flex flex-col opacity-0 translate-y-12"
+            key={index}
+          >
+            <Grass className="mx-auto h-12 text-battleship-gray-200" />
+            <div className="flex-1 px-6 py-8 text-xl text-center bg-whiskey-200 rounded-3xl bg-gradient-to-b from-battleship-gray-200 via-whiskey-200 to-whiskey-200">
+              <h3>{item.title}</h3>
+              <p className="mt-2">
+                <strong>{item.text}</strong>
+              </p>
             </div>
-          )
-        })}
-      </section>
-    </>
+          </div>
+        )
+      })}
+    </section>
   )
 }
 

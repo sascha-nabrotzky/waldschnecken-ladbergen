@@ -31,26 +31,27 @@ const TatanaInfo: React.FC = () => {
           <br />
           <strong className="tracking-wider">0170 2802494</strong>
         </p>
-        <p className="mt-1 leading-5 border-t pt-2 text-mine-shaft-400">
+        <p className="mt-1 leading-5 border-t pt-2 text-mine-shaft-600">
           Staatl. geprüfte Erzieherin <br />
           und zertifizierte Tagesmutter
         </p>
       </a>
       <button
         onClick={openModal1}
-        className="mt-4 pt-1.5 pb-2 px-4 text-xl text-white rounded-full bg-mine-shaft-400 leading-none"
+        className="mt-4 pt-1.5 pb-2 px-4 text-xl text-white rounded-full bg-mine-shaft-600 leading-none hover:opacity-50 transition-opacity duration-300"
       >
-        Info
+        Details
       </button>
 
       <dialog
         ref={modalRef1}
-        className="mx-4 pt-4 pb-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/50 rounded"
+        className="mx-4 sm:mx-auto pt-4 pb-8 max-w-xl text-left bg-white backdrop:bg-mine-shaft-950/70 rounded"
       >
         <div className="flex justify-end">
           <button
             onClick={closeModal1}
             className="px-4 mb-2"
+            aria-label="close tatjanas info dialog box"
           >
             <CloseIcon className="h-6" />
           </button>

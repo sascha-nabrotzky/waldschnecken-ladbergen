@@ -31,7 +31,8 @@ module.exports = {
           300: '#bba189',
           400: '#a78468',
           500: '#997159',
-          600: '#7b5747', // default
+          // 600: '#7b5747', // default
+          600: '#725141', // modified for contrast
           700: '#69483f',
           800: '#5a3e39',
           900: '#4f3734',
@@ -70,7 +71,8 @@ module.exports = {
           300: '#b0b0b0',
           400: '#888888',
           500: '#6d6d6d',
-          600: '#5d5d5d',
+          // 600: '#5d5d5d',
+          600: '#595959', // modified for contrast
           700: '#4f4f4f',
           800: '#454545',
           900: '#3d3d3d',
@@ -80,10 +82,22 @@ module.exports = {
       gridTemplateColumns: {
         default:
           'minmax(2rem, 1fr) repeat(2, minmax(0, 25rem)) minmax(2rem, 1fr)',
-        imgBox: 'minmax(2rem, 1fr) repeat(4, 1fr) minmax( 2rem, 1fr)'
+        imgBox: 'minmax(2rem, 1fr) repeat(4, 1fr) minmax( 2rem, 1fr)',
+        sub: 'subgrid'
       },
       gridTemplateRows: {
         default: 'repeat(3, min-content) 1fr min-content'
+      },
+      animation: {
+        slideUp: 'clear 1s ease-in-out forwards'
+      },
+      keyframes: {
+        clear: {
+          '100%': {
+            opacity: 1,
+            transform: 'translateY(0px)'
+          }
+        }
       }
     }
   },
