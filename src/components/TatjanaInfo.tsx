@@ -51,6 +51,7 @@ const TatanaInfo: React.FC = () => {
           <button
             onClick={closeModal1}
             className="px-4 mb-2"
+            aria-label="close tatjanas info dialog box"
           >
             <CloseIcon className="h-6" />
           </button>

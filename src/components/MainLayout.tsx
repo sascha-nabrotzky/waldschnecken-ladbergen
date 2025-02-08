@@ -28,7 +28,7 @@ const MainContent: React.FC<Props> = ({
                 ? 'md:col-end-4'
                 : 'md:col-end-3 md:text-left'
             }`}
-            role="heading"
+            aria-label="heading"
           >
             <h1
               className={

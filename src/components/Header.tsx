@@ -8,15 +8,12 @@ const Header: React.FC = () => {
     <>
       <div
         className="sm:hidden bg-roman-coffee-600"
-        role="logo"
+        aria-label="Logo der Waldschnecken"
       >
         <Logo className="h-24 mx-auto text-white" />
       </div>
 
-      <header
-        className="sticky top-0 flex flex-col justify-center z-20"
-        role="navigation"
-      >
+      <header className="sticky top-0 flex flex-col justify-center z-20">
         <nav className="flex items-center justify-center w-full gap-4 py-2 text-xl bg-roman-coffee-600 text-white shadow-xl">
           <Link
             to="/"
@@ -41,7 +38,7 @@ const Header: React.FC = () => {
             to="/blog"
             className="hover:opacity-50 transition-opacity duration-300"
           >
-            Blog/News
+            News
           </Link>
         </nav>
       </header>
