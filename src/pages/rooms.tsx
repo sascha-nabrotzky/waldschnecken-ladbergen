@@ -25,7 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
             src="../images/kita-wohnzimmer-1.webp"
             alt="Foto des Betreuungsraums"
             placeholder="blurred"
-            className="mt-12 mb-2 rounded"
+            className="mt-12 mb-2 rounded-sm"
           />
           <p className="hyphens-auto">
             &#8593; Der große <strong>Betreuungsraum</strong> von ca. 40 qm
@@ -35,7 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
             src="../images/kita-themenzimmer-1.webp"
             alt="Foto vom Themenzimmer"
             placeholder="blurred"
-            className="mt-12 mb-2 rounded"
+            className="mt-12 mb-2 rounded-sm"
           />
           <p className="hyphens-auto">
             &#8593; Das angrenzende <strong>Themenzimmer</strong> wird
@@ -46,7 +46,7 @@ const IndexPage: React.FC<PageProps> = () => {
             src="../images/kita-kueche-2.webp"
             alt="Foto unserer Küche"
             placeholder="blurred"
-            className="mt-12 mb-2 rounded"
+            className="mt-12 mb-2 rounded-sm"
           />
           <p className="hyphens-auto">
             &#8593; Die <strong>Küche</strong> ist mit einer neuen Einbauküche
@@ -57,7 +57,7 @@ const IndexPage: React.FC<PageProps> = () => {
             src="../images/kita-schlafraum-1.webp"
             alt="Foto vom Schlafraum"
             placeholder="blurred"
-            className="mt-12 mb-2 rounded"
+            className="mt-12 mb-2 rounded-sm"
           />
           <p className="hyphens-auto">
             &#8593; Ein großer <strong>Schlafraum</strong> lädt zum entspannen
@@ -67,7 +67,7 @@ const IndexPage: React.FC<PageProps> = () => {
             src="../images/kita-bad-1.webp"
             alt="Foto vom Badezimmer"
             placeholder="blurred"
-            className="mt-12 mb-2 rounded"
+            className="mt-12 mb-2 rounded-sm"
           />
           <p className="hyphens-auto">
             &#8593; Das <strong>Kinderbadezimmer</strong> bietet ein großes
@@ -79,7 +79,7 @@ const IndexPage: React.FC<PageProps> = () => {
             src="../images/kita-aussen-1.webp"
             alt="Foto vom Außengelände"
             placeholder="blurred"
-            className="mt-12 mb-2 rounded"
+            className="mt-12 mb-2 rounded-sm"
           />
 
           <p className="hyphens-auto">
