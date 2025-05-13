@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
-import { ReactComponent as CloseIcon } from '../icons/close.svg'
+import TatjanaImg from '../images/Tatjana.webp'
+import CloseIcon from '../icons/close.svg'
 
 const TatanaInfo: React.FC = () => {
   const modalRef1 = React.useRef<HTMLDialogElement>(null)
@@ -19,10 +19,10 @@ const TatanaInfo: React.FC = () => {
   return (
     <div className="col-start-2 col-end-4 md:col-start-2 md:col-end-3 flex flex-col justify-center items-center text-center">
       <div className="mb-4 bg-mine-shaft-200 w-36 md:w-48 aspect-square rounded-full overflow-hidden">
-        <StaticImage
-          src="../images/Tatjana.webp"
+        <img
+          src={TatjanaImg}
           alt="Foto von Tagesmutter Tatjana Nabrotzky"
-          placeholder="blurred"
+          className="w-full h-full object-cover"
         />
       </div>
       <a href={'tel: +49 170 2802494'}>

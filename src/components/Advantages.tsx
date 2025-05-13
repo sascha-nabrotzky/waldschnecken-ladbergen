@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ReactComponent as Grass } from '../images/grass.svg'
+import Grass from '../images/grass.svg'
 
 const text = [
   {

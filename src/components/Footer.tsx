@@ -1,8 +1,8 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-import { ReactComponent as WavesBottom } from '../images/waves-bottom.svg'
-import { ReactComponent as Instagram } from '../icons/instagram.svg'
-import { ReactComponent as Step } from '../icons/StepLogo.svg'
+import { Link } from 'react-router-dom'
+import WavesBottom from '../images/waves-bottom.svg'
+import Instagram from '../icons/instagram.svg'
+import Step from '../icons/StepLogo.svg'
 
 const Footer: React.FC = () => {
   return (

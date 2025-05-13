@@ -1,7 +1,7 @@
 import * as React from 'react'
 import TatanaInfo from './TatjanaInfo'
 import OksanaInfo from './OksanaInfo'
-import { ReactComponent as EmailIcon } from '../icons/email.svg'
+import EmailIcon from '../icons/email.svg'
 
 const Address: React.FC = () => {
   const mailto = 'mailto:kontakt@waldschnecken-ladbergen.de'

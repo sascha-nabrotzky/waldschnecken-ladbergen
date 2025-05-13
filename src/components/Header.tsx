@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-import { ReactComponent as Logo } from '../icons/logo.svg'
-import { ReactComponent as WavesTop } from '../images/waves-top.svg'
+import { Link } from 'react-router-dom'
+import Logo from '../icons/logo.svg'
+import WavesTop from '../images/waves-top.svg'
 
 const Header: React.FC = () => {
   return (

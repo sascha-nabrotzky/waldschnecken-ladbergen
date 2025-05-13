@@ -1,8 +1,7 @@
 import * as React from 'react'
-import type { HeadFC, PageProps } from 'gatsby'
 import MainLayout from '../components/MainLayout'
 
-const IndexPage: React.FC<PageProps> = () => {
+const PrivacyPolicy: React.FC = () => {
   return (
     <>
       <MainLayout pagetitle="Datenschutz&shy;erklärung">
@@ -684,20 +683,4 @@ const IndexPage: React.FC<PageProps> = () => {
   )
 }
 
-export default IndexPage
-
-// built-in Head export that allows you to add elements to the document head of your pages
-export const Head: HeadFC = () => (
-  <>
-    <html lang="de" />
-    <title>Datenschutzerklärung | Waldschnecken</title>
-    <meta
-      name="description"
-      content="Die Datenschutzerklärung der Waldschnecken"
-    />
-    <meta
-      name="robots"
-      content="noindex"
-    />
-  </>
-)
+export default PrivacyPolicy

@@ -1,8 +1,7 @@
 import * as React from 'react'
-import type { HeadFC, PageProps } from 'gatsby'
 import MainLayout from '../components/MainLayout'
 
-const IndexPage: React.FC<PageProps> = () => {
+const Imprint: React.FC = () => {
   return (
     <>
       <MainLayout pagetitle="Impressum">
@@ -135,20 +134,4 @@ const IndexPage: React.FC<PageProps> = () => {
   )
 }
 
-export default IndexPage
-
-// built-in Head export that allows you to add elements to the document head of your pages
-export const Head: HeadFC = () => (
-  <>
-    <html lang="de" />
-    <title>Waldschnecken | Impressum</title>
-    <meta
-      name="description"
-      content="Das Imperssum der Waldschnecken"
-    />
-    <meta
-      name="robots"
-      content="noindex"
-    />
-  </>
-)
+export default Imprint

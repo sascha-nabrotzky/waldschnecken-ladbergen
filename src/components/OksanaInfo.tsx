@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
-import { ReactComponent as CloseIcon } from '../icons/close.svg'
+import OksanaImg from '../images/Oksana.webp'
+import CloseIcon from '../icons/close.svg?react'
 
 const OksanaInfo: React.FC = () => {
   const modalRef2 = React.useRef<HTMLDialogElement>(null)
@@ -19,10 +19,10 @@ const OksanaInfo: React.FC = () => {
   return (
     <div className="col-start-2 col-end-4 md:col-start-3 md:col-end-4 flex flex-col justify-center items-center">
       <div className="mb-4 bg-mine-shaft-200 w-36 md:w-48 aspect-square rounded-full overflow-hidden">
-        <StaticImage
-          src="../images/Oksana.webp"
+        <img
+          src={OksanaImg}
           alt="Foto von Tagesmutter Oksana Welk"
-          placeholder="blurred"
+          className="w-full h-full object-cover"
         />
       </div>
       <a
